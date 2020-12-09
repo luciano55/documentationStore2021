@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Fundamentos 2020</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+</head>
+
+<body data-dark>
+  <header class="header">
+    <h1>BBDD STORE ** DAM 19-20</h1>
+  </header>
+  <button class="panel-btn  hamburger--vortex " type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1" data-scroll-spy>Introduction</a>
+      <a href="#seccion2" data-scroll-spy>Tables</a>
+      <a href="#seccion3" data-scroll-spy>Triggers</a>
+      <a href="#seccion4" data-scroll-spy>Functions</a>
+      <a href="#seccion5" data-scroll-spy>Procedures</a>
+      <a href="#seccion6" data-scroll-spy>Tests</a>
+      <a href="#seccion7" data-scroll-spy>Message</a>
+      <a href="#seccion8" data-scroll-spy>Views</a>
+      <a href="#seccion9" data-scroll-spy>Gestión Carrito</a>
+      <a href="#seccion10" data-scroll-spy>Gestión Proveedor</a>
+      <a href="#seccion11" data-scroll-spy>Gestión Cliente</a>
+      <a href="#seccion12" data-scroll-spy>Pruebas Globales y de Integración</a>
+
+    </nav>
+  </aside>
+  <main>
+    <section id="seccion1" class="mainWrapper center" data-scroll-spy>
+      <h2>Introduction</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell menuLook" id="introduccionVisible"> Introduction</a>
+
+          <ul id="introduccion" class="hiddenPart nota s2">
+            <li>Somos gente que nos gusta hacer bien las cosas.</li>
+            <li>El objetivo de nuestros ejercicios es la calidad.</li>
+            <li>Calidad mejor que cantidad.</li>
+            <li>Buenas Prácticas</li>
+            <br>
+            <b>
+              <li><a id="tareabbddVisible" class="bbddFuncion">Nuestra Tienda DAM:</a>
+            </b></li>
+            <ul id="tareabbdd" class="hiddenPart nota s2"><br>
+              <b>
+                <li><a id="gestioncarritoVisible" class="bbddFuncion">Gestión del carrito</a>
+              </b></li>
+              <ul id="gestioncarrito" class="hiddenPart nota s2">
+                <li><a href="#altaCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Alta</spam>
+                  </a></li>
+                <li><a href="#bajaCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_baja">Baja</spam>
+                  </a></li>
+                <li><a href="#modificarCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_modi">Modificación</spam>
+                  </a></li>
+                <li><a href="#verCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_mostrar">Mostrar el carrito</spam>
+                  </a></li>
+                <li><a href="#despacharCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_despachar">Despachar Carrito</spam>
+                  </a></li>
+              </ul>
+              <br><b>
+                <li><a id="gestionproveedorVisible" class="bbddFuncion">Gestión del proveedor</a>
+              </b></li>
+              <ul id="gestionproveedor" class="hiddenPart nota s2">
+                <li><a href="#registarCabeceraProveedorVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Registrar cabecera de la Factura</spam>
+                  </a></li>
+                <li><a href="#registarLineaDetalleProveedorVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Registrar detalle de la Factura</spam>
+                  </a></li>
+                <li><a href="#GPManageReceivedRegisterBillVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Gestionar las Factura registradas</spam>
+                  </a></li>
+
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      </h2>
+    </section>
+    <section id="seccion2" class="mainWrapper center" data-scroll-spy>
+      <h2>Tables</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="autonomous_communityVisible">
+            autonomous_community </a>
+          <ul id="autonomous_community" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar las comunidades Autónomas</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/autonomous_community.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="brandVisible">
+            brand </a>
+          <ul id="brand" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar las distintas compañías de móviles.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/brand.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="cameraVisible">
+            camera </a>
+          <ul id="camera" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar las distintas cámaras para móviles.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/camera.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="clientVisible">
+            client </a>
+          <ul id="client" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar los datos de los clientes.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/client.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="client_historicVisible">
+            client_historic </a>
+          <ul id="client_historic" class="hiddenPart nota s2">
+            <p><b> Registrar las operaciones que se llevan a cabo en la tabla client.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/client_historic.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="componentVisible">
+            component </a>
+          <ul id="component" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar los componentes generales de los móviles.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/component.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="countryVisible">
+            country </a>
+          <ul id="country" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registrar los nombres de paises</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/country.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="detail_line_bill_clientVisible">
+            detail_line_bill_client</a>
+          <ul id="detail_line_bill_client" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra las líneas de detalle de la factura del cliente.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/detail_line_bill_client.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="detail_line_bill_providerVisible">
+            detail_line_bill_provider </a>
+          <ul id="detail_line_bill_provider" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra las líneas de detalle de la factura del proveedor.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/detail_line_bill_provider.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="header_bill_clientVisible">
+            header_bill_client </a>
+          <ul id="header_bill_client" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra la cabecera de la factura del cliente.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/head_bill_client.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="header_bill_providerVisible">
+            header_bill_provider </a>
+          <ul id="header_bill_provider" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra la cabecera de la factura del proveedor.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/head_bill_provider.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="modelVisible">
+            model </a>
+          <ul id="model" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los distintos tipos de cámara de un modelo..</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/model.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="model_cameraVisible">
+            model_camera </a>
+          <ul id="model_camera" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra las distintas cámaras de un modelo.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/model_camera.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="model_componentVisible">
+            model_component </a>
+          <ul id="model_component" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los distintos componentes de un modelo.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/model_component.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="model_imageVisible">
+            model_image </a>
+          <ul id="model_image" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra las distintas imágenes de un modelo.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/model_image.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="municipalityVisible">
+            municipality</a>
+          <ul id="municipality" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los nombres de los distintos municipios de España con su código de
+                provincia.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/municipality.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="postalcodeVisible">
+            postalcode</a>
+          <ul id="postalcode" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los distintos códigos postales junto el id del municipio.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/postalcode.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="providerVisible">
+            provider</a>
+          <ul id="provider" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los datos de los proveedores.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/provider.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="provider_orderedVisible">
+            provider_ordered </a>
+          <ul id="provider_ordered" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los datos de los pedidos a proveedores.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/provider_ordered.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="provider_ordered_historicVisible">
+            provider_ordered_historic</a>
+          <ul id="provider_ordered_historic" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los datos histórico de los pedidos a proveedores.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/provider_ordered_historic.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="provinceVisible">
+            province </a>
+          <ul id="province" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los nombres de las provincias españolas junto su identificador de comunidad
+                autónoma.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/province.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shopping_cartVisible">
+            shopping_cart </a>
+          <ul id="shopping_cart" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los datos de cada uno de los clientes juntos a sus artículos en el carrito
+                de la compra.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/shopping_cart.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shopping_cart_historicVisible">
+            shopping_cart_historic </a>
+          <ul id="shopping_cart_historic" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los datos histórico de cada movimiento de los clientes juntos a sus
+                artículos en el carrito de la compra.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/shopping_cart_historic.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shop_productVisible">
+            shop_product </a>
+          <ul id="shop_product" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Registra los productos que tenemos a la venta en la tienda. Tengamos o no
+                existencias.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/shop_product.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <!-- <div class="myIndexTable boxLook">   
+                             <a class="myIndexCell" id=".....Visible">
+                                ...... </a> 
+                             <ul id="...." class="hiddenPart nota s2"> 
+                                <p><b>Responsabilidad: --------</b></p>
+                                <div  class="boxIzquierda">
+                                       <img src="./img/tablas/" alt="">
+                                </div> 
+                             </ul> 
+                         </div>   
+                        -->
+      </div>
+    </section>
+    <section id="seccion3" class="mainWrapper center" data-scroll-spy>
+      <h2>Triggers</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="client_BIVisible">
+            client_BI </a>
+          <ul id="client_BI" class="hiddenPart nota s2">
+            <p><b> Responsabilidad: A la hora de añadir filas, asignamos el valor de user y de password.</b>
+            </p>
+            <br>
+            <div class="boxIzquierda">
+              SET new.user = new.emailClient;<br>
+              SET new.password = md5(1234567);<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="detail_line_bill_provider_BIVisible">
+            detail_line_bill_provider_BI </a>
+          <ul id="detail_line_bill_provider_BI" class="hiddenPart nota s2">
+            <p><b> Responsabilidad: Asignar a pedidos de proveedores la línea de la factura que acaba de generar.</b>
+            </p>
+            <br>
+            <div class="boxIzquierda">
+              UPDATE `provider_ordered` SET `idRowHBP`= new.idRowHBP WHERE<br>
+              `idProvider` = (SELECT `idProvider` FROM `provider` WHERE `providerFullName` =
+              new.billCompanyNameProvider) AND<br>
+              locate(new.concept,`nameModel`) AND locate(new.memory,`memory`) AND locate(new.memoryIn,`memoryIn`) AND
+              locate(new.color,`color`) AND ! `removed`;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="header_bill_client_BIVisible">
+            header_bill_client_BI </a>
+          <ul id="header_bill_client_BI" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Generar el número de factura del cliente.</b></p>
+            <br>
+            <div class="boxIzquierda">
+              DECLARE myDigit int DEFAULT 7;<br>
+              DECLARE myNumber varchar(7) DEFAULT "0000000";<br>
+              IF month(now()) = 1 AND day(now()) = 1 THEN SET new.idRowHBC = 1;<br>
+              ELSE SET new.idRowHBC = getNewIdRowHBC() + 1;<br>
+              END IF;
+              SET myNumber = RIGHT(concat(myNumber,new.idRowHBC),myDigit);
+              SET new.idNumberBillClient = concat(year(now()), "-", myNumber);
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="header_bill_provider_BIVisible">
+            header_bill_provider_BI </a>
+          <ul id="header_bill_provider_BI" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Generar identificador de fila para cada factura del cliente</b></p>
+            <div class="boxIzquierda">
+              SET new.idRowHBP = getMaxIdRowHBP() + 1;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="model_BIVisible">
+            model_BI</a>
+          <ul id="model_BI" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>Responsabilidad: Generar un nuevo valor de referencia si no existe.</b></p>
+            <div class="boxIzquierda">
+              IF char_length(new.referencia_sku) = 0 THEN
+              SET new.referencia_sku = getNewSKU(new.idBrand,new.modelName);
+              END IF;
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="provider_ordered_BUVisible">
+            provider_ordered_BU </a>
+          <ul id="provider_ordered_BU" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>Responsabilidad: Asigna valor booleano en función que tenga asignado o no
+                idRowHBP, es decir si tiene factura asignada received is true en caso contrario false.</b></p>
+            <div class="boxIzquierda">
+              IF (new.idRowHBP is NOT Null) and old.isReceived = false THEN
+              SET new.isReceived = true;
+              END IF;<br>
+              IF (new.idRowHBP is Null) and old.isReceived = true THEN SET new.isReceived = false;
+              END IF;
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shoppingCart_BIVisible">
+            shopping_cart_BI</a>
+          <ul id="shoppingCart_BI" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>Responsabilidad: Obtiene un nuevo valor (siguiente al último de
+                shopping_cart_historic) para identificar filas de shoppingCart.</b></p>
+            <div class="boxIzquierda">
+              SET new.idShoppingCart = (SELECT max(`idShoppingCart`) + 1 FROM `shopping_cart_historic` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shop_product_BIVisible">
+            shop_product_BI </a>
+          <ul id="shop_product_BI" class="hiddenPart nota s2">
+            <p><b>Responsabilidad: Genera un nuevo id producto y le pone precio.</b></p>
+            <div class="boxIzquierda">
+              SET new.idProduct = getMaxIdProduc_shop_product() + 1;<br>
+              SET new.salePrice = new.salePrice + (new.salePrice * 0.5);
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="shop_product_BUVisible">
+            shop_product_BU </a>
+          <ul id="shop_product_BU" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>Responsabilidad: Al bajar el stock actual del stock mínimo lanzamos una orden de
+                pedido a proveedores siempre y cuando no esté ya pedida.</b></p>
+            <div class="boxIzquierda">
+              IF ((new.stockCurrent < new.stockMinimum) AND <br>&emsp;!(SELECT count(*) FROM `provider_ordered`
+                <br>&emsp;&emsp; WHERE `idProvider` = new.idProvider AND `idProduct`= new.idProduct))
+                <br> <br>&emsp;THEN
+                INSERT INTO `provider_ordered` (`idProvider`, `idProduct`, `referencia_sku`, `nameModel`,
+                `modelDescription`, `modelFeature`, `memory`, `memoryIn`, `color`, `referencePrice`, `unitsOrdered`)
+                <br>&emsp; VALUES (new.idProvider,
+                <br>&emsp; new.idProduct,
+                <br>&emsp; new.referencia_sku,
+                <br>&emsp; (SELECT `modelName` FROM `model` WHERE `referencia_sku` = new.referencia_sku),
+                <br>&emsp; (SELECT `modelDescription` FROM `model` WHERE `referencia_sku` = new.referencia_sku),
+                <br>&emsp; (SELECT `modelFeatures` FROM `model` WHERE `referencia_sku` = new.referencia_sku),
+                <br>&emsp; new.memory,
+                <br>&emsp; new.memoryIn,
+                <br>&emsp; new.color,
+                <br>&emsp; new.salePrice,
+                <br>&emsp; new.stockMinimum*2);
+                <br> END IF;
+
+            </div>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section id="seccion4" class="mainWrapper center" data-scroll-spy>
+      <h2>Functions</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addClientVisible">
+            addClient(myName, mySurname, myNifNie, myMobile, myEmail, myDateBird, myCP, myAddress, myAvatar)-->
+            varchar(2000) </a>
+          <ul id="addClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añadir un cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br>
+              DECLARE lastId int DEFAULT 0;<br><br>
+              INSERT INTO `client`(`nameClient`, `surnameClient`, `nifClient`, `mobileClient`, `emailClient`,
+              `birthdateClient`, `postalCodeClient`, `clientAddress`, `avatar`)<br>
+              &emsp;VALUES (myName, mySurname, myNifNie, myMobile, myEmail, myDateBird, myCP, myAddres,
+              myAvatar);<br><br>
+              SET lastId = (SELECT LAST_INSERT_ID());<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = concat(message, " INSERT INTO `client`(........) Correctly "); <br>
+              &emsp; SET message = concat(message, <a href="#addClient_historicVisible"><span
+                  class="bbddFuncion">addClient_historic(</span></a>lastId, "Create")); <br>
+              &emsp;ELSE SET message = concat(message, " -Error INSERT INTO `client`(........) No done ");<br>
+              END IF;<br><br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addClient_historicVisible">
+            addClient_historic(myIdClient, myOperation)-->varchar(200) </a>
+          <ul id="addClient_historic" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añadir una operación CUD del cliente al historico de cliente</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              INSERT INTO `client_historic`(`idClient`, `nameClient`, `surnameClient`, `nifClient`, `mobileClient`,
+              `emailClient`,
+              `birthdateClient`, `postalCodeClient`, `clientAddress`, `avatar`, `user`, `password`, `dateRegistration`,
+              `removed`,
+              `operation`) <br>&emsp;SELECT *, myOperation FROM client where idClient = myIdClient; <br><br>
+
+              IF ROW_COUNT() > 0 THEN SET message = concat(" - Operacion:", myOperation," registrada en el historico con
+              idClient:", myIdClient);<br>
+              &emsp;ELSE SET message = concat(" - Error Operacion:", myOperation," al intentar registrar en el historico
+              con idClient:", myIdClient);<br>
+
+              END IF;<br><br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addDetail_line_bill_clientVisible">
+            addDetail_line_bill_client( idNumberBill, orderLine, idProduct, units)--> varchar(100) </a>
+          <ul id="addDetail_line_bill_client" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añadir la línea de detalle a la factura del cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE myPrice float DEFAULT (SELECT `salePrice` FROM `shop_product` WHERE `idProduct` =
+              myIdProduct);<br>
+              DECLARE myNetAmount float DEFAULT myUnits * myPrice;<br>
+              DECLARE myIva float DEFAULT 21;<br>
+              DECLARE myIvaAmount float DEFAULT myNetAmount * (myIva / 100);<br>
+              DECLARE myModelAmount float DEFAULT myNetAmount + myIvaAmount;<br><br>
+              INSERT INTO `detail_line_bill_client`(`idNumberBillClient`, `orderLine`, `concept`, `memory`, `memoryIn`,
+              `color`, `units`, `price`, `netAmount`,`iva`, `ivaAmount`, `modelAmount`) VALUES(<br>
+              myIdNumberBill, myOrderLine,<br>
+              (SELECT `modelName` FROM `model` WHERE `referencia_sku` = (SELECT `referencia_sku` FROM `shop_product`
+              WHERE `idProduct` = myIdProduct)),<br>
+              (SELECT `memory` FROM `shop_product` WHERE `idProduct` = myIdProduct),<br>
+              (SELECT `memoryIn` FROM `shop_product` WHERE `idProduct` = myIdProduct),<br>
+              (SELECT `color` FROM `shop_product` WHERE `idProduct` = myIdProduct),<br>
+              myUnits, myPrice, myNetAmount, myIva, myIvaAmount, myModelAmount);<br><br>
+
+              IF ROW_COUNT() > 0 THEN RETURN " - INSERT INTO `detail_line_bill_client` Correctly";<br>
+              &emsp; ELSE RETURN " - Error INSERT INTO `detail_line_bill_client` Cancel";<br>
+              END IF; <br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addHeader_bill_clientVisible">
+            addHeader_bill_client(idClient)--> varchar(100) </a>
+          <ul id="addHeader_bill_client" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añade parcialmente la cabecera de una factura correspondiente a un cliente
+                determinado.</b></p>
+            <div class="boxIzquierda">
+              INSERT INTO `header_bill_client`( `clientName`, `clientNif`, `clientAddress`, `clientCP`) VALUES(<br>
+              &emsp;&emsp;&emsp; (SELECT concat(`nameClient`,", ",`surnameClient`) FROM `client` WHERE `idClient`=
+              myIdClient),<br>
+              &emsp;&emsp;&emsp; (SELECT `nifClient` FROM `client` WHERE `idClient`= myIdClient),<br>
+              &emsp;&emsp;&emsp; (SELECT `clientAddress` FROM `client` WHERE `idClient`= myIdClient),<br>
+              &emsp;&emsp;&emsp; (SELECT `postalCodeClient` FROM `client` WHERE `idClient`= myIdClient)<br>
+              );<br><br>
+              IF ROW_COUNT() > 0 THEN RETURN true;<br>
+              &emsp;&emsp;&emsp; ELSE RETURN false;<br>
+              END IF;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addHeader_bill_providerVisible">
+            addHeader_bill_provider(myIdBillProvider, myBillDateProvider, myBillCompanyNameProvider,
+            myShippingTransport, myNetAmount, myIvaAmount, myTotalBill, myDiscount)--> varchar(200)
+          </a>
+          <ul id="addHeader_bill_provider" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añade la cabecera de una factura correspondiente a un
+                proveedor.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(200) DEFAULT "";<br><br>
+
+              if (<a href="#verifyCompanyNameProviderVisible"><span
+                  class="bbddFuncion">verifyCompanyNameProvider</span></a><b> (myBillCompanyNameProvider)</b>) THEN<br>
+              SET message = concat("- Verificación: Nombre del proveedor: ", myBillCompanyNameProvider, " verificado
+              correctamente");<br><br>
+
+              INSERT INTO `header_bill_provider`(`idBillProvider`,
+              `billDateProvider`,
+              `billCompanyNameProvider`,
+              `billCompanyCifProvider`,
+              `billCompanyAddressProvider`,
+              `billCompanyCPProvider`,
+              `shippingTransport`,
+              `netAmount`,
+              `discount`,
+              `ivaAmount`,
+              `totalBill`) VALUES (myIdBillProvider,
+              myBillDateProvider,
+              myBillCompanyNameProvider,<br>
+              (SELECT `poviderCif` FROM `provider` WHERE `providerFullName` = myBillCompanyNameProvider),
+              (SELECT `addressProvider` FROM `provider` WHERE `providerFullName` = myBillCompanyNameProvider),
+              (SELECT `postalCodeProvider` FROM `provider` WHERE `providerFullName` = myBillCompanyNameProvider),
+              myShippingTransport, myNetAmount, myDiscount, myIvaAmount, myTotalBill);<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = concat(message, " - Registrada la Cabecera factura proveedor de
+              forma
+              satisfactoia");<br>
+              ELSE SET message = concat(message, " - Error al intentar registrar la Cabecera factura proveedor");<br>
+              END IF;<br>
+
+              ELSE SET message = concat("- Verificación: Error Nombre del proveedor: ", myBillCompanyNameProvider, " NO
+              existe");<br>
+              END IF;<br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addProviderOrderedHistoricVisible">
+            addProviderOrderedHistoric(IdRowHBP, concept, memory, memoryIn, color, unitsOrder, unitsRecived, price)-->
+            varchar(100) </a>
+          <ul id="addProviderOrderedHistoric" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añadir al histórico de pedido la orden del pedido tratada.</b></p>
+            <div class="boxIzquierda">
+              INSERT INTO `provider_ordered_historic`(`idOrderProvider`, `idRowHBP`, `idProvider`, `idProduct`,
+              `referencia_sku`, `nameModel`, `modelDescription`, `modelFeature`, `memory`, `memoryIn`, `color`,
+              `dateOrderProvider`, `referencePrice`, `unitsOrdered`, `unitsReceived`, `priceReceived`) VALUES ( (SELECT
+              `idOrderProvider` FROM `provider_ordered` WHERE `idRowHBP` = myIdRowHBP AND locate(`nameModel`,myConcept)
+              AND locate(`memory`, myMemory) AND locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor)),
+              myIdRowHBP, (SELECT `idProvider` FROM `provider_ordered` WHERE `idRowHBP` = myIdRowHBP AND
+              locate(`nameModel`,myConcept) AND locate(`memory`, myMemory) AND locate(`memoryIn`, myMemoryIn) AND
+              locate(`color`, myColor)), (SELECT `idProduct` FROM `provider_ordered` WHERE `idRowHBP` = myIdRowHBP AND
+              locate(`nameModel`,myConcept) AND locate(`memory`, myMemory) AND locate(`memoryIn`, myMemoryIn) AND
+              locate(`color`, myColor)), (SELECT `referencia_sku` FROM `provider_ordered` WHERE `idRowHBP` = myIdRowHBP
+              AND locate(`nameModel`,myConcept) AND locate(`memory`, myMemory) AND locate(`memoryIn`, myMemoryIn) AND
+              locate(`color`, myColor)), myConcept, (SELECT `modelDescription` FROM `provider_ordered` WHERE `idRowHBP`
+              = myIdRowHBP AND locate(`nameModel`,myConcept) AND locate(`memory`, myMemory) AND locate(`memoryIn`,
+              myMemoryIn) AND locate(`color`, myColor)), (SELECT `modelFeature` FROM `provider_ordered` WHERE `idRowHBP`
+              = myIdRowHBP AND locate(`nameModel`,myConcept) AND locate(`memory`, myMemory) AND locate(`memoryIn`,
+              myMemoryIn) AND locate(`color`, myColor)), myMemory, myMemoryIn, myColor, (SELECT `dateOrderProvider` FROM
+              `provider_ordered` WHERE `idRowHBP` = myIdRowHBP AND locate(`nameModel`,myConcept) AND locate(`memory`,
+              myMemory) AND locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor)), (SELECT `referencePrice` FROM
+              `provider_ordered` WHERE `idRowHBP` = myIdRowHBP AND locate(`nameModel`,myConcept) AND locate(`memory`,
+              myMemory) AND locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor)), myUnitsOrder, myUnitsReceived,
+              myPrice ); <br><br>
+              IF ROW_COUNT() > 0 THEN RETURN " - INSERT INTO `provider_ordered_historic` correctly";<br>
+              ELSE RETURN " - Error INSERT INTO `provider_ordered_historic` no done";<br>
+              END IF;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addShopProductVisible">
+            addShopProduct(idProduct, concept, memory, memoryIn, color, units, price )--> varchar(200) </a>
+          <ul id="addShopProduct" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Cuando aparece un nuevo producto desde pedido proveedores este, se añade a
+                la venta es decir a la tabla shop_product.</b></p>
+            <div class="boxIzquierda">
+              DECLARE myReferencia_sku varchar(30) DEFAULT (SELECT `referencia_sku` FROM `provider_ordered` WHERE
+              `idRowHBP`= myIdRowHBP AND locate( `nameModel`, myConcept) and locate(`memory`, myMemory) and locate(
+              `memoryIn`, myMemoryIn) and locate( `color`, myColor));<br><br>
+              DECLARE myIdProvider int DEFAULT (SELECT `idProvider` FROM `provider_ordered` WHERE `idRowHBP`= myIdRowHBP
+              AND locate( `nameModel`, myConcept) and locate(`memory`, myMemory) and locate( `memoryIn`, myMemoryIn) and
+              locate( `color`, myColor));<br><br>
+              DECLARE hasError int DEFAULT 0;<br>
+              DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET hasError = 1;<br>
+              DECLARE CONTINUE HANDLER FOR 1062 SET hasError = 2;<br><br>
+              IF (SELECT count(*) FROM `shop_product` WHERE `referencia_sku` = myReferencia_sku AND `IdProvider` =
+              myIdProvider AND locate(`memory`, myMemory) and locate(`memoryIn`, myMemoryIn) and locate(`color`,
+              myColor)) THEN SET message = "El producto ya está a la venta";<br>
+              &emsp; ELSE SET message = "NO NO NO existe este producto";<br><br>
+              &emsp;&emsp; INSERT INTO `shop_product`(`referencia_sku`,`IdProvider`,
+              `salePrice`,`stockCurrent`,`memory`,`memoryIn`, `color`) VALUES (myReferencia_sku, myIdProvider, myPrice,
+              myUnits, myMemory, myMemoryIn, myColor);<br><br>
+              &emsp; IF (hasError = 1) THEN SET message = concat(message, " - Error SQLEXCEPTION INSERT INTO
+              `shop_product`(`idRowHBP`:", myIdRowHBP, " `concept`:", myConcept, ")");<br><br>
+              &emsp;&emsp; ELSEIF (hasError = 2) THEN SET message = concat(message, " - Error DUPLICATE KEY in INSERT
+              INTO `shop_product`(`idRowHBP`:", myIdRowHBP, " `concept`:", myConcept, ")");<br><br>
+              &emsp;&emsp;&emsp; ELSEIF (hasError = 0 && ROW_COUNT() > 0) THEN<br><br>
+              &emsp;&emsp;&emsp; SET message = concat(message, " - INSERT `shop_product``(`idRowHBP`:",myIdRowHBP, "
+              `concept`:", myConcept, ") correctly"); <br>
+              &emsp;&emsp; ELSE SET message = concat(message," - Error INSERT `shop_product`(`idRowHBP`:",myIdRowHBP, "
+              `concept`:", myConcept, ") Not done"); <br>
+              &emsp; END IF;<br>
+              END IF;<br>
+              RETURN message;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addShoppingCartVisible">
+            addShoppingCart(idClient, idProduct, units, idShoppingCart, operation)--> boolean </a>
+          <ul id="addShoppingCart" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añade al carrito el pedido de un producto.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br>
+              DECLARE myIdShoppingCart int DEFAULT 0;<br>
+              DECLARE hasError int DEFAULT 0;<br>
+              DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET hasError = 1;<br>
+              DECLARE CONTINUE HANDLER FOR 1062 SET hasError = 2;<br>
+              INSERT INTO `shopping_cart`(`idClient`, `idProduct`, `units`) VALUES (myIdClient, myIdProduct,
+              myUnits);<br>
+              IF (hasError = 1) THEN SET message = concat(" - Error SQLEXCEPTION INSERT INTO
+              `shopping_cart`(`idClient`:", myIdClient, " `idProduct`:", myIdProduct, ")");<br>
+              &emsp; ELSEIF (hasError = 2) THEN SET message = concat(" - Error DUPLICATE KEY in INSERT INTO
+              `shopping_cart`(`idClient`:", myIdClient, " `idProduct`:", myIdProduct,")"); <br>
+              &emsp;&emsp; ELSEIF (hasError = 0 && ROW_COUNT() > 0) THEN SET message = concat(" - INSERT
+              `shopping_cart`(`idClient`:", myIdClient," `idProduct`:", myIdProduct,") correctly"); <br>
+              &emsp;&emsp;&emsp; IF (myHistoric) THEN SET myIdShoppingCart = <a href="#getIdShoppingCartVisible"><span
+                  class="bbddFuncion">getIdShoppingCart(</span></a>myIdClient,myIdProduct); <br>
+              &emsp;&emsp;&emsp;&emsp; SET message = concat(message,<a href="#addShoppingCartHistoricVisible"><span
+                  class="bbddFuncion">addShoppingCartHistoric(</span></a>myIdClient, myIdProduct, myUnits,
+              myIdShoppingCart, "I")); <br>
+              &emsp;&emsp;&emsp; END IF;<br>
+              &emsp;&emsp;&emsp; ELSE SET message = concat(message," - Error INSERT
+              `shopping_cart_historic`(`idClient`:",myIdClient," `idProduct`:",myIdProduct,") Not done"); <br>
+              END IF;<br>
+              RETURN message;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addShoppingCartHistoricVisible">
+            addShoppingCartHistoric( idClient, idProduct, units, idShoppingCart, operation)--> boolean </a>
+          <ul id="addShoppingCartHistoric" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Añade al histórico del carrito un movimiento determinado u operación
+                acaecida en el carrito.</b></p>
+            <div class="boxIzquierda">
+              INSERT INTO `shopping_cart_historic`(`idClient`, `idProduct`, `units`, `idShoppingCart`, `operation`)<br>
+              VALUES (myIdClient, myIdProduct, myUnits, myIdShoppingCart, myOperation);<br><br>
+              IF ROW_COUNT() > 0 THEN RETURN concat("INSERT INTO `shopping_cart_historic`(`idClient`:",myIdClient,"
+              `idProduct`:",myIdProduct," `operation`: ",myOperation,") correctly");<br>
+              &emsp;&emsp; ELSE RETURN concat("Error INSERT INTO `shopping_cart_historic`(`idClient`:",myIdClient,"
+              `idProduct`:",myIdProduct," `operation`: ",myOperation,") Cancel");<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="checkIdClientVisible">
+            checkIdClient( idClient)--> varchar(100)</a>
+          <ul id="checkIdClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida y verifica el identificador del cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(100) DEFAULT concat("idClient: ", myIdClient, " Validado y Verificado
+              correectamente");<br>
+              IF !<a href="#isNaturalNumberWithoutZeroVisible">
+                <spam class="bbddFuncion">isNaturalNumberWithoutZero(</spam>
+              </a><b>myIdClient)</b> THEN SET message = concat("Error de Validacion: ", myIdClient, " No es un número
+              Natural. ");<br>
+              &emsp; ELSE IF !(SELECT count(*) FROM `client` WHERE `idClient` = myIdClient) THEN <br>
+              &emsp;&emsp; SET message = concat("Error de Verificación: ",myIdClient," No existe como identificador de
+              cliente");<br>
+              &emsp; END IF; <br>
+              END IF;<br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="checkInvoice_orderAssignmentVisible">
+            checkInvoice_orderAssignment(idRowHBP, nameModel, memory, memoryIn, colore)--> boolean</a>
+          <ul id="checkInvoice_orderAssignment" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si la factura se le asignó al pedido.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `provider_ordered` WHERE `idProvider`= <br>
+              &emsp;(SELECT `idProvider` FROM `provider` WHERE `providerFullName` = <br>
+              &emsp; (SELECT `billCompanyNameProvider` FROM `header_bill_provider` <br> &emsp; WHERE `idRowHBP` =
+              myIdRowHBP))<br>
+              AND `nameModel` = myNameModel <br>
+              AND `memory` = myMemory<br>
+              AND `memoryIn` = myMemoryIn<br>
+              AND `color` = myColor<br>
+              );
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="checkIdProductVisible">
+            checkIdProduct( idProduct)--> varchar(100) </a>
+          <ul id="checkIdProduct" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Valida y verifica el identificador de producto.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(100) DEFAULT concat(" - idProduct: ", myIdProduct, " Validado y Verificado
+              correctamente");<br>
+              IF !<a href="#isNaturalNumberWithoutZeroVisible">
+                <spam class="bbddFuncion">isNaturalNumberWithoutZero(</spam>
+              </a><b>myIdProduct)</b> THEN SET message = concat(" - Error de Validacion: ",myIdProduct," No es un número
+              Natural. ");<br>
+              &emsp;ELSE IF !(SELECT count(*) FROM `shop_product` WHERE `idProduct` = myIdProduct) THEN <br>
+              &emsp;&emsp;SET message = concat(" - Error de Verificación: ",myIdProduct," No existe como identificador
+              de Producto.");<br>
+              &emsp;&emsp;END IF;<br>
+              END IF;<br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="checkPostalCodeVisible">
+            checkPostalCode(string)--> boolean</a>
+          <ul id="checkPostalCode" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si una direccion local ej: 06200Almendralejo(Badajoz) es
+                válida.</b></p>
+            <div class="boxIzquierda">
+              DECLARE len int DEFAULT char_length(DP);<br>
+              DECLARE cp varchar(5) DEFAULT left(DP,5);<br>
+              DECLARE municipality varchar(100) DEFAULT trim( mid(DP,6,locate("(",DP)-6));<br>
+              DECLARE province varchar(100) DEFAULT trim(right(DP,len - locate("(",DP)));<br>
+              DECLARE control varchar(100) DEFAULT "";<br><br>
+
+              SET province = left(province, char_length(province) -1);<br>
+
+
+              IF len = 0 then RETURN 1;<br>
+              &emsp;ELSE IF(!<a href="#validateCodePostalVisible">
+                <spam class="bbddFuncion">validateCodePostal</spam>
+              </a><b>(cp)</b>) THEN RETURN 2;<br>
+              &emsp;&emsp;ELSE IF (!<a href="#verifyCodePostalVisible">
+                <spam class="bbddFuncion">verifyCodePostal</spam>
+              </a><b>(cp)</b>) THEN RETURN 3;<br>
+              &emsp;&emsp;&emsp;ELSE SET control = <a href="#validateStringOfLettersSpaceWithLenVisible">
+                <spam class="bbddFuncion">validateStringOfLettersSpaceWithLen</spam>
+              </a><b>(municipality,1,100)</b>;<br>
+              &emsp;&emsp;&emsp;IF locate("Error", control) THEN RETURN 4;<br>
+              &emsp;&emsp;&emsp;&emsp;ELSE IF (!<a href="#verifyMunicipalityVisible">
+                <spam class="bbddFuncion">verifyMunicipality</spam>
+              </a><b>(municipality)</b>) THEN RETURN 5;<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;ELSE SET control = <a href="#validateStringOfLettersSpaceWithLenVisible">
+                <spam class="bbddFuncion">validateStringOfLettersSpaceWithLen</spam>
+              </a><b>(province,1,80)</b>;<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;IF locate("Error", control) THEN RETURN 6;<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ELSE IF (!<a href="#verifyProvinceVisible">
+                <spam class="bbddFuncion">verifyProvince</spam>
+              </a><b>(province)</b>) THEN RETURN 7;<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;END IF;<br>
+              &emsp; &emsp;&emsp;&emsp;&emsp;END IF;<br>
+              &emsp;&emsp;&emsp;&emsp; END IF;<br>
+              &emsp; &emsp;&emsp; END IF;<br>
+              &emsp; &emsp; END IF;<br>
+              &emsp;END IF;<br>
+              END IF;<br>
+              RETURN true;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="checkUnitsCarVisible">
+            checkUnitsCar(units) --> varchar(100) </a>
+          <ul id="checkUnitsCar" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida y verifica las unidades a pedir de un producto.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(100) DEFAULT concat(" - Unidades: ", myUnist, " Validado y Verificado
+              correctamente");<br>
+              DECLARE unitMax int DEFAULT 10;<br>
+              IF !<a href="#isNaturalNumberWithoutZeroVisible">
+                <spam class="bbddFuncion">isNaturalNumberWithoutZero(</spam>
+              </a><b>myIdProduct)</b> THEN SET message = concat(" - Error de Validacion: ",myUnist," No es un número
+              Natural. ");<br>
+              ELSE IF !(myUnist > 0 AND myUnist <= unitMax ) THEN <br>
+                &emsp;&emsp; SET message = concat(" - Error de Verificación: ",myUnist," No cumple con el rango de 1-",
+                unitMax," unidades.");<br>
+                &emsp;&emsp; END IF;<br>
+                END IF;<br>
+                RETURN message;<br>
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="deleteClientVisible">
+            deleteClient(myIdClient)--> varchar(200)</a>
+          <ul id="deleteClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Elimina un cliente, registrando en un histórico la operación.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(200) DEFAULT "";<br><br>
+              UPDATE `client` SET `removed`= true WHERE `idClient` = myIdClient;<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = concat(" - Eliminado el idClient:", myIdClient);<br>
+              &emsp;SET message = concat(message, addClient_historic(myIdClient, "Delete"));<br>
+              &emsp;ELSE SET message = concat(" - Error al eliminar al idClient:", myIdClient);<br>
+              END IF;<br><br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="deleteHeader_bill_clientVisible">
+            deleteHeader_bill_client( customerInvoiceNumber)--> varchar(200) </a>
+          <ul id="deleteHeader_bill_client" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Elimina la cabecera de una factura determinada</b></p>
+            <div class="boxIzquierda">
+              DELETE FROM `header_bill_client` WHERE `idNumberBillClient` = customerInvoiceNumber;<br>
+              IF ROW_COUNT() > 0 THEN RETURN " DELETE FROM `header_bill_client`.... Correctly"; <br>
+              &emsp;&emsp; ELSE RETURN " Error DELETE FROM `header_bill_client`.... Cancel";<br>
+              END IF;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="deleteShoppingCartVisible">
+            deleteShoppingCart( idClient, idProduct, historic)--> varchar(200)</a>
+          <ul id="deleteShoppingCart" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Elimina un producto del carrito y posibilita o no añadir al histórico ese
+                movimiento.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(200) DEFAULT "";<br>
+              DECLARE state varchar (200) DEFAULT "";<br>
+              DECLARE myUnits int DEFAULT<a href="#getUnitsShoppingCartVisible">
+                <spam class="bbddFuncion">getUnitsShoppingCart(</spam>
+              </a><b>myIdClient, myIdProduct);</b> <br>
+              DECLARE myIdShoppingCart int DEFAULT<a href="#getIdShoppingCartVisible">
+                <spam class="bbddFuncion">getIdShoppingCart(</spam>
+              </a><b>myIdClient, myIdProduct);</b><br><br>
+
+              DELETE FROM `shopping_cart` WHERE `idClient`= myIdClient AND `idProduct`= myIdProduct;<br><br>
+
+              IF ROW_COUNT() > 0 THEN SET message = concat("DELETE `shopping_cart`(`idClient`:", myIdClient, "
+              `idProduct`:", myIdProduct,") correctly");<br>
+              &emsp;&emsp; IF myHistoric THEN SET state = <a href="#addShoppingCartHistoricVisible">
+                <spam class="bbddFuncion">addShoppingCartHistoric(</spam>
+              </a><b>myIdClient, myIdProduct, myUnits, myIdShoppingCart, "D");</b><br><br>
+              &emsp;&emsp;&emsp;&emsp; IF !locate("Error", state) THEN SET message = concat(message," - INSERT
+              `shopping_cart_historic`(`idClient`:", myIdClient," `idProduct`:", myIdProduct, " `operation`:'D' )
+              correctly");<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ELSE SET message = concat(message, " - Error INSERT
+              `shopping_cart_historic`(`idClient`:", myIdClient," `idProduct`:", myIdProduct, " `operation`:'D')
+              Cancel");<br>
+              &emsp;&emsp;&emsp;&emsp; END IF; <br>
+              &emsp;&emsp; END IF;<br>
+              &emsp;&emsp; ELSE SET message = concat("Error DELETE `shopping_cart`(`idClient`:",myIdClient,"
+              `idProduct`:",myIdProduct,") Cancel");<br>
+              END IF;<br>
+              RETURN message;<br>
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_emailVisible">
+            existClient_email(myEmail)-->boolen </a>
+          <ul id="existClient_email" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe un email en la tabla client.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `client` WHERE `emailClient` = myEmail);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_email_updateVisible">
+            existClient_email_update(myIdClient, myEmail)-->boolen </a>
+          <ul id="existClient_email_update" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe un email en la tabla client distinto del actual.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `client` WHERE `emailClient` = myEmail and `idClient` != myIdClient);
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_nifVisible">
+            existClient_nif(myNif)-->boolen </a>
+          <ul id="existClient_nif" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe un nif o nie en la tabla client.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `client` WHERE `nifClient` = myNif);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_nif_updateVisible">
+            existClient_nif_update(idClient, myNif)-->boolen </a>
+          <ul id="existClient_nif_update" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe un nif o nie en la tabla client a parte del actual.</b></p>
+            <div class="boxIzquierda">
+              RETURN(SELECT count(*) FROM `client` WHERE `nifClient` = myNif and `idClient` != myIdClient);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_userVisible">
+            existClient_user(myUser)-->boolen </a>
+          <ul id="existClient_user" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe ya un user en la tabla client.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `client` WHERE `user` = myUser);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="existClient_user_updateVisible">
+            existClient_user_update(myIdClient, myUser)-->boolen </a>
+          <ul id="existClient_user_update" class="hiddenPart nota s2">
+            <p><b>&emsp;Contempla si existe ya un user en la tabla client distinto del actual.</b></p>
+            <div class="boxIzquierda">
+              RETURN(SELECT count(*) FROM `client` WHERE `user` = myUser and `idClient` != myIdClient);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="fillZerosOnTheLeftVisible">
+            fillZerosOnTheLeft(cadena, size)-->varchar(20) </a>
+          <ul id="fillZerosOnTheLeft" class="hiddenPart nota s2">
+            <p><b>&emsp;Rellena ceros por la izquierda formando una cadena hasta un tamaño determinado.</b></p>
+            <div class="boxIzquierda">
+              DECLARE size int DEFAULT char_length(cadena);<br>
+              WHILE (size < count) DO <br>
+                &emsp; SET cadena = concat("0",cadena); <br>
+                &emsp; SET size = size + 1; <br>
+                END WHILE;<br>
+                RETURN cadena;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getIdProductProviderOrderedVisible">
+            getIdProductProviderOrdered(idRowHBP, concept, memory, memoryIn, color)--> int </a>
+          <ul id="getIdProductProviderOrdered" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve el id producto de una orden de pedido.</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `idProduct` <br>
+              FROM `provider_ordered` <br>
+              WHERE `idRowHBP` = myIdRowHBP AND<br>
+              &emsp;&emsp;locate(`nameModel`,myModel) AND<br>
+              &emsp;&emsp;locate(`memory`, myMemory) AND <br>
+              &emsp;&emsp;locate(`memoryIn`, myMemoryIn) AND <br>
+              &emsp;&emsp;locate(`color`, myColor));<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getIdShoppingCartVisible">
+            getIdShoppingCart(idClient, idproduct)--> int </a>
+          <ul id="getIdShoppingCart" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve el identificador de fila de shopping_cart</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `idShoppingCart` FROM `shopping_cart` WHERE `idClient`= myIdClient AND `idProduct`=
+              myIdProduct);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getLastIdproductShopProductVisible">
+            getLastIdproductShopProduct()--> int </a>
+          <ul id="getLastIdproductShopProduct" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve el último idProduct de shop_product</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT max(`idProduct`) FROM `shop_product` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getLetterNifVisible">
+            getLetterNif(nifNumber) -->char(1) </a>
+          <ul id="getLetterNif" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve la letra de un posible número de un documento</b> </p>
+            <div class="boxIzquierda">
+              RETURN MID("TRWAGMYFPDXBNJZSQVHLCKE", MOD(nifNumber, 23) + 1, 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getLastIdProductShopProductVisible">
+            getLastIdProductShopProduct () -->int </a>
+          <ul id="getLastIdProductShopProduct" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve el id producto más alto o último de la tabla shop_product</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT ifnull(max(`idProduct`),0) FROM `shop_product` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getMaxCustomerInvoiceNumberVisible">
+            getMaxCustomerInvoiceNumber(idClient) --> varchar(12) </a>
+          <ul id="getMaxCustomerInvoiceNumber" class="hiddenPart nota s2">
+            <p><b>&emsp; Devuelve el número de factura más alto de un cliente.</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT max(`idNumberBillClient`) FROM `header_bill_client` WHERE `clientNif` = <br>
+              &emsp;&emsp;&emsp;(SELECT `nifClient` FROM `client` WHERE `idClient` = myIdClient));
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getMaxIdProduc_shop_productVisible">
+            getMaxIdProduc_shop_product()-->int </a>
+          <ul id="getMaxIdProduc_shop_product" class="hiddenPart nota s2">
+            <p><b>&emsp; Obtener el máximo valor de shop_product para idProduct..</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT ifnull(max(`idProduct`),0) FROM `shop_product` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getMaxIdRowHBCVisible">
+            getMaxIdRowHBC()--> int </a>
+          <ul id="getMaxIdRowHBC" class="hiddenPart nota s2">
+            <p><b>&emsp;Obtener el valor máximo de id de fila de la tabla header_bill_client</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT ifnull(max(`idRowHBC`),0) FROM `header_bill_client` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getMaxIdRowHBPVisible">
+            getMaxIdRowHBP()--> int </a>
+          <ul id="getMaxIdRowHBP" class="hiddenPart nota s2">
+            <p><b>&emsp;Obtener el valor máximo de id de fila de la tabla header_bill_provider</b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT ifnull(max(`idRowHBP`),0) FROM `header_bill_provider` WHERE 1);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getNewSKUVisible">
+            getNewSKU(idBrand, modelName)-->varchar(30) </a>
+          <ul id="getNewSKU" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Obtener un nuevo SKU. El SKU (stock keeping unit) o código de un artículo
+                es para identificar/diferenciar los productos y sus variaciones. Si lo duplicas pierde el sentido de su
+                uso.
+                El SKU es para uso interno de tu compañía. Y el sistema de Amazon, no te lo marca como información
+                obligatoria.
+              </b> </p>
+            <div class="boxIzquierda">
+              DECLARE brandLetters varchar(3) DEFAULT (SELECT upper(RIGHT(`brandName`,3)) FROM `brand` WHERE `idBrand` =
+              InidBrand);<br>
+              DECLARE nameModelLetters varchar(3) DEFAULT upper(left(InModelName,3));<br>
+              DECLARE num4Digits varchar(4) DEFAULT <b><a href="#fillZerosOnTheLeftVisible">
+                  <spam class="bbddFuncion">fillZerosOnTheLeft(</spam>
+                </a><a href="#getNumberRandomVisible">
+                  <spam class="bbddFuncion">getNumberRandom(</spam>
+                </a>0,9999),4)</b>;<br>
+              DECLARE myReferencia_sku varchar(12) DEFAULT concat(brandLetters,"-",num4Digits,"-",nameModelLetters);<br>
+              WHILE (SELECT count(*) FROM `model` WHERE `referencia_sku` = myReferencia_sku) DO<br>
+              SET myReferencia_sku = concat(brandLetters,"-",<b><a href="#fillZerosOnTheLeftVisible">
+                  <spam class="bbddFuncion">fillZerosOnTheLeft(</spam>
+                </a><a href="#getNumberRandomVisible">
+                  <spam class="bbddFuncion">getNumberRandom(</spam>
+                </a>0,9999),4)</b>,"-",nameModelLetters);<br>
+              END WHILE; <br>
+              RETURN myReferencia_sku; <br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getNumberRandomVisible">
+            getNumberRandom(min,max)-->int</a>
+          <ul id="getNumberRandom" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Obtener un número aleatorio entre un mínimo y un máximo. </b> </p>
+            <div class="boxIzquierda">
+              RETURN round((rand() * (max-min) + min));
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getOrderedUnitsVisible">
+            getOrderedUnits(idRowHBP, concept, memory, memoryIn, color)-->int</a>
+          <ul id="getOrderedUnits" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Obtener las unidades pedidas de un pedido. </b> </p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `unitsOrdered` FROM `provider_ordered` WHERE <br>
+              &emsp;`idRowHBP` = myIdRowHBP AND <br>
+              &emsp;locate(`nameModel`, myConcept) AND <br>
+              &emsp;locate(`memory`, myMemory) AND <br>
+              &emsp;locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor)); <br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getStockVisible">
+            getStock(idproduct)--> int </a>
+          <ul id="getStock" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve el stock de un producto</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `stockCurrent` FROM `shop_product` WHERE `idProduct` = myIdProduct);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getUnitsShoppingCartVisible">
+            getUnitsShoppingCart(idClient, idProduct)--> int</a>
+          <ul id="getUnitsShoppingCart" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Devuelve del carrito las unidades de un producto de un cliente.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `units` FROM `shopping_cart` WHERE `idClient` = myIdClient AND `idProduct`= myIdProduct);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isInProvider_orderedVisible">
+            isInProvider_ordered(idprovider, idProduct)-->boolean</a>
+          <ul id="isInProvider_ordered" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprobar si está lanzada o no una orden de pedido.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `provider_ordered` WHERE `idProvider` = myIdProveedor AND `idProduct`=
+              myIdProduct AND `removed` = 0);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isLetterVisible">
+            isLetter(char)-->boolean</a>
+          <ul id="isLetter" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprobar si el caracter pasado es una letra.</b></p>
+            <div class="boxIzquierda">
+              IF myChar BETWEEN "a" and "z" THEN RETURN true;<br>
+              END IF;<br>
+              RETURN false;
+            </div>
+          </ul>
+        </div>
+
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isNaturalNumberWithoutZeroVisible">
+            isNaturalNumberWithoutZero(valor)-->boolean</a>
+          <ul id="isNaturalNumberWithoutZero" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprobar si el valor es un número natural.</b></p>
+            <div class="boxIzquierda">
+              IF valor > 0 AND valor < 99999999 THEN RETURN true; <br>
+                END IF;<br>
+                RETURN false;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isStringLettersVisible">
+            isStringLetters(string)-->boolen</a>
+          <ul id="isStringLetters" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprueba si en una cadena son todas letras.</b></p>
+            <div class="boxIzquierda">
+              DECLARE contadorLetra int DEFAULT 0;<br>
+              DECLARE limite int DEFAULT char_length(myString);<br>
+              WHILE contadorLetra < limite DO<br>
+                &emsp;SET contadorLetra = contadorLetra + 1;<br>
+                &emsp;IF !<a href="#isLetterVisible">
+                  <spam class="bbddFuncion">isLetter(mid(myString,contadorLetra,1))</spam>
+                </a> THEN RETURN false;<br>
+                &emsp;END IF;<br>
+                END WHILE;<br>
+                RETURN contadorLetra;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isStringLettersSpaceVisible">
+            isStringLettersSpace(string)-->boolen</a>
+          <ul id="isStringLettersSpace" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprueba si una cadena son todas letras con/sin espacios.</b></p>
+            <div class="boxIzquierda">
+              DECLARE contadorLetra int DEFAULT 0;<br>
+              DECLARE limite int DEFAULT char_length(myString);<br>
+              DECLARE letter varchar(1) DEFAULT "";<br>
+              WHILE contadorLetra < limite DO<br>
+                &emsp;SET contadorLetra = contadorLetra + 1;<br>
+                &emsp;SET letter = mid(myString,contadorLetra,1);<br>
+                &emsp;IF !<a href="#isLetterVisible">
+                  <spam class="bbddFuncion">isLetter(letter))</spam>
+                </a> && letter != " " THEN RETURN false;<br>
+                &emsp;END IF;<br>
+                END WHILE;<br>
+                RETURN contadorLetra;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isStringLettersSpaceGuidonVisible">
+            isStringLettersSpaceGuidon(string)-->boolen</a>
+          <ul id="isStringLettersSpaceGuidon" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprueba si una cadena son todas letras con/sin espacios con/sin
+                guiones.</b></p>
+            <div class="boxIzquierda">
+              DECLARE contadorLetra int DEFAULT 0;<br>
+              DECLARE limite int DEFAULT char_length(myString);<br>
+              DECLARE letter varchar(1) DEFAULT "";<br>
+              WHILE contadorLetra < limite DO<br>
+                &emsp;SET contadorLetra = contadorLetra + 1;<br>
+                &emsp;SET letter = mid(myString,contadorLetra,1);<br>
+                &emsp;IF !<a href="#isLetterVisible">
+                  <spam class="bbddFuncion">isLetter(letter))</spam>
+                </a> && letter != " " && letter != "-" THEN RETURN false;<br>
+                &emsp;END IF;<br>
+                END WHILE;<br>
+                RETURN contadorLetra;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isStringNumberVisible">
+            isStringNumber(string)-->boolen</a>
+          <ul id="isStringNumber" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Comprueba si una cadena contiene solo números.</b></p>
+            <div class="boxIzquierda">
+              DECLARE len int DEFAULT CHAR_LENGTH(myString);<br>
+              DECLARE i int DEFAULT 0;<br>
+              WHILE i < len DO<br>
+                &emsp;SET i = i + 1;<br>
+                &emsp;if mid(myString,i,1) NOT BETWEEN "0" AND "9" THEN RETURN false;<br>
+                &emsp;END IF;<br>
+                END WHILE;<br>
+                RETURN true;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="manageThePurchaseFinishVisible">
+            manageThePurchaseFinish(orderLine, headerAdded, customerInvoiceNumber, message)-->boolean</a>
+          <ul id="manageThePurchaseFinish" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Actualiza totales de la cabecera y si no hay detalle elimina la
+                cabecera.</b></p>
+            <div class="boxIzquierda">
+              IF (myOrderLine = 1 AND headerAdded) THEN SET message = concat(message, " - ", <b><a
+                  href="#deleteHeader_bill_clientVisible">
+                  <spam class="bbddFuncion">deleteHeader_bill_client(</spam>
+                </a>customerInvoiceNumber));</b> END IF;<br>
+              IF (myOrderLine > 1 AND headerAdded) THEN SET message = concat(message, " - ", <b><a
+                  href="#updateHeader_bill_clientVisible">
+                  <spam class="bbddFuncion">updateHeader_bill_client(</spam>
+                </a>customerInvoiceNumber));</b> END IF;<br>
+              IF message = "Comienzo:" THEN SET message = "Comienzo: We have not done anything"; <br>
+              END IF;<br>
+              RETURN message;
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateClientVisible">
+            updateClient(myIdClient, myName, mySurname, myNifNie, myMobile, myEmail, myDateBird, myCP, myAddress,
+            myAvatar)-->varchar(200)</a>
+          <ul id="updateClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Actualiza los datos personales de un cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(200) DEFAULT "";<br><br>
+              UPDATE `client` SET `nameClient`= myName, `surnameClient`= mySurname, `nifClient`= myNifNie,
+              `mobileClient`= myMobile,
+              `emailClient`= myEmail, `birthdateClient`= myDateBird, `postalCodeClient`= myCP, `clientAddress`=
+              myAddress, `avatar`=
+              myAvatar WHERE `idClient` = myIdClient;<br><br>
+
+              IF ROW_COUNT() > 0 THEN SET message = concat(" - UPDATE `client`(........) Correctly ");<br>
+              SET message = concat(message, addClient_historic(myIdClient, "Update"));<br>
+              ELSE SET message = concat(" -Error UPDATE INTO `client`(........) No done ");<br>
+              END IF;<br>
+              RETURN message;
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateHeader_bill_clientVisible">
+            updateHeader_bill_client(customerInvoiceNumber)--> varchar(100) </a>
+          <ul id="updateHeader_bill_client" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Actualizar los totales de una factura determinada</b></p>
+            <div class="boxIzquierda">
+              UPDATE `header_bill_client` SET `netAmount`= (SELECT sum(`units` * `price`) FROM
+              `detail_line_bill_client`<br>
+              &emsp; WHERE `idNumberBillClient` = myIdNumberBillClient), `ivaAmount`= (SELECT sum(`ivaAmount`) <br>
+              &emsp; FROM `detail_line_bill_client` WHERE `idNumberBillClient` = myIdNumberBillClient),<br>
+              &emsp; `totalBill`= `netAmount` + `ivaAmount` WHERE `idNumberBillClient` = myIdNumberBillClient;<br>
+              <br> IF ROW_COUNT() > 0 THEN RETURN " UPDATE `header_bill_client` ... Correctly";<br>
+              &emsp;ELSE RETURN " Error UPDATE `header_bill_client` ... Cancel";<br>
+              END IF;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateLoginVisible">
+            updateLogin(myIdClient, myUser, myPassword)--> varchar(2000) </a>
+          <ul id="updateLogin" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Actualiza el login del cliente</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(200) DEFAULT "";<br><br>
+              UPDATE `client` SET `user` = myUser,`password` = MD5(myPassword) WHERE `idClient` = myIdClient;<br>
+              IF ROW_COUNT() > 0 THEN SET message = " - LOGIN Update .... correctly";
+              SET message = concat(message, <a href="#addClient_historicVisible">
+                <spam class="bbddFuncion">addClient_historic</spam>
+              </a><b>(myIdClient, "UpdateLog"));</b><br>
+              ELSE SET message = " - Error LOGIN Update .... NO done";<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateProviderOrdered_idProductVisible">
+            updateProviderOrdered_idProduct(idproduct, units) --> varchar(100) </a>
+          <ul id="updateProviderOrdered_idProduct" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Este proceso se lanza cuando se ha añadido un producto nuevo a la venta a
+                partir de un pedido. Su misión será actualizar el id producto de la tabla pedido proveedor con el id del
+                producto nuevo a la venta.</b></p>
+            <div class="boxIzquierda">
+              DECLARE lastIdProduct int DEFAULT 0;<br>
+              DECLARE message varchar(100) DEFAULT "";<br>
+              SET lastIdProduct = <a href="#getLastIdProductShopProductVisible">
+                <spam class="bbddFuncion">getLastIdProductShopProduct();</spam>
+              </a><br>
+              UPDATE `provider_ordered` SET `idProduct`= lastIdProduct WHERE `idRowHBP`= myIdRowHBP AND locate(
+              `nameModel`, myConcept) and locate(`memory`, myMemory) and locate( `memoryIn`, myMemoryIn) and locate(
+              `color`, myColor);<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = concat(" - UPDATE `provider_ordered`. `idProduct`:",lastIdProduct, "
+              correctly");<br>
+              &emsp; ELSE SET message = concat(" - Error UPDATE `provider_ordered`. `idProduct`:",lastIdProduct, " no
+              done");<br>
+              END IF;<br>
+              RETURN message;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateProviderOrdered_idRowHBP_unitsOrdered_isReceivedVisible">
+            updateProviderOrdered_idRowHBP_unitsOrdered_isReceived(idRowHBP, myConcept, myMemory, myMemoryIn,
+            myColor,units, unitsRecived) --> varchar(100)</a>
+          <ul id="updateProviderOrdered_idRowHBP_unitsOrdered_isReceived" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Para aquellos pedidos que solo han recibido una parte, lo actualizamos a
+                pedido pendiente de entrega y reflejamos las unidades pendientes.</b></p>
+            <div class="boxIzquierda">
+              UPDATE `provider_ordered` SET `idRowHBP` = null ,`unitsOrdered`= (`unitsOrdered` - myUnitsReceived),
+              `isReceived` = 0 WHERE `idRowHBP` = myIdRowHBP AND locate(`nameModel`,myConcept) AND locate(`memory`,
+              myMemory) AND locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor);<br><br>
+              IF ROW_COUNT() > 0 THEN RETURN " - UPDATE `provider_ordered` SET `idRowHBP` = null ,`unitsOrdered`=
+              (`unitsOrdered` - myUnitsReceived), `isReceived` = 0 correctly";<br>
+              &emsp; ELSE RETURN " - Error UPDATE `provider_ordered` SET `idRowHBP` = null ,`unitsOrdered`=
+              (`unitsOrdered` - myUnitsReceived), `isReceived` = 0 no done";<br>
+              END IF;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateProviderOrdered_removeTrueVisible">
+            updateProviderOrdered_removeTrue(idRowHBPyIdProduct, concept, memory, memoryIn, color)--> varchar(100) </a>
+          <ul id="updateProviderOrdered_removeTrue" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;La orden del pedido la damos por terminada poniendo su propiedad remove a
+                true.</b></p>
+            <div class="boxIzquierda">
+              UPDATE `provider_ordered` SET `removed`= 1 WHERE `idRowHBP` = myIdRowHBP AND locate(`nameModel`,myConcept)
+              AND locate(`memory`, myMemory) AND locate(`memoryIn`, myMemoryIn) AND locate(`color`, myColor); <br> <br>
+              IF ROW_COUNT() > 0 THEN RETURN " - UPDATE `provider_ordered` SET `removed`= 1 correctly";<br>
+              &emsp; ELSE RETURN " - Error UPDATE `provider_ordered` SET `removed`= 1 No done";<br>
+              END IF;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateShopProduct_stockCurrent_AddVisible">
+            updateShopProduct_stockCurrent_Add (idproduct, units) --> varchar(100) </a>
+          <ul id="updateShopProduct_stockCurrent_Add" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acumula en el stock actual de un producto las unidades recibidas en el
+                pedido.</b></p>
+            <div class="boxIzquierda">
+              UPDATE `shop_product` SET `stockCurrent`= `stockCurrent` + myUnits WHERE `idProduct` =
+              myIdProduct;<br><br>
+              IF ROW_COUNT() > 0 THEN RETURN concat(" - UPDATE `shop_product`.. idProduct:",myIdProduct,"
+              Units:",myUnits,"Subtract correctly");<br>
+              &emsp;&emsp; ELSE RETURN concat(" - Error: UPDATE `shop_product`.. idProduct:",myIdProduct,"
+              Units:",myUnits,"Subtract Cancel");<br>
+              END IF;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateShopProduct_stockCurrent_SubtractVisible">
+            updateShopProduct_stockCurrent_Subtract(idproduct, units) --> varchar(100) </a>
+          <ul id="updateShopProduct_stockCurrent_Subtract" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Descuenta del stock actual de un producto las unidades pasadas por
+                parámetro.</b></p>
+            <div class="boxIzquierda">
+              UPDATE `shop_product` SET `stockCurrent`= `stockCurrent` - myUnits WHERE `idProduct` =
+              myIdProduct;<br><br>
+              IF ROW_COUNT() > 0 THEN RETURN concat(" - UPDATE `shop_product`.. idProduct:",myIdProduct,"
+              Units:",myUnits,"Subtract correctly");<br>
+              &emsp;&emsp; ELSE RETURN concat(" - Error: UPDATE `shop_product`.. idProduct:",myIdProduct,"
+              Units:",myUnits,"Subtract Cancel");<br>
+              END IF;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateShoppingCart_unitVisible">
+            updateShoppingCart_unit ( idClient, idProduct, units, historic)--> varchar(200) </a>
+          <ul id="updateShoppingCart_unit" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Actualiza las unidades del carrito asignándole como nuevo valor las
+                unidades pasadas por parámetro. Según historic lo añade o no al histórico.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br>
+              DECLARE state varchar (2000) DEFAULT "";<br>
+              DECLARE myIdShoppingCart int DEFAULT 0;<br><br>
+              UPDATE `shopping_cart` SET `units`= myUnits WHERE `idClient` = myIdClient AND `idProduct`=
+              myIdProduct;<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = concat(" - UPDATE `shopping_cart`(`idClient`:",myIdClient,"
+              `idProduct`:",myIdProduct,") correctly");<br>
+              &emsp; IF myHistoric THEN SET myIdShoppingCart = <a href="#getIdShoppingCartVisible">
+                <spam class="bbddFuncion">getIdShoppingCart(</spam>
+              </a><b>myIdClient, myIdProduct);</b><br>
+              &emsp;&emsp; SET state = <a href="#addShoppingCartHistoricVisible">
+                <spam class="bbddFuncion">addShoppingCartHistoric(</spam>
+              </a><b>myIdClient, myIdProduct, myUnits, myIdShoppingCart, "U");</b><br>
+              &emsp;&emsp;&emsp; IF state = "1" THEN<br>
+              &emsp;&emsp;&emsp;&emsp; SET message = concat(message," - INSERT
+              `shopping_cart_historic`(`idClient`:",myIdClient," `idProduct`:",myIdProduct," `operation`:'U' )
+              correctly");<br>
+              &emsp;&emsp;&emsp; ELSE SET message = concat(message," -" , state);<br>
+              &emsp;&emsp; END IF; <br>
+              &emsp; END IF;<br>
+              &emsp; ELSE SET message = concat(" - Error UPDATE `shopping_cart`(`idClient`:",myIdClient,"
+              `idProduct`:",myIdProduct,")");<br>
+              END IF; <br>
+              RETURN message;<br>
+
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateClientVisible">
+            validateClient(myName, mySurname, myNifNie, myMobile, myEmail, myDateBird, myCP, myAvatar);--> varchar(2000)
+          </a>
+          <ul id="validateClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Lleva a cabo la validación de los datos personales del cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              SET message = <a href="#validateStringOfLettersSpaceWithLenVisible">
+                <spam class="bbddFuncion">validateStringOfLettersSpaceWithLen</spam>
+              </a>(myName,3,50);<br>
+              if (!locate("Error",message)) THEN SET message = concat(message, <a
+                href="#validateStringOfLettersSpaceGuidonWithLenVisible">
+                <spam class="bbddFuncion">validateStringOfLettersSpaceGuidonWithLen</spam>
+              </a>(mySurname,3,100));<br>
+              &emsp;if (!locate("Error",message)) THEN SET message = concat(message, <a href="#validateNifNieVisible">
+                <spam class="bbddFuncion">validateNifNie</spam>
+              </a>(myNifNie));<br>
+              &emsp;&emsp;if <a href="#validateMobileVisible">
+                <spam class="bbddFuncion">validateMobile</spam>
+              </a>(myMobile) THEN SET message = concat(message, " -Este formato mobile: ", myMobile, " es
+              correcto.");<br>
+              &emsp;&emsp;&emsp;if <a href="#validateEmailVisible">
+                <spam class="bbddFuncion">validateEmail</spam>
+              </a>(myEmail) THEN SET message = concat(message, " -Este formato email: ", myEmail, " es correcto.");<br>
+              &emsp;&emsp;&emsp;&emsp;if <a href="#validateDateVisible">
+                <spam class="bbddFuncion">validateDate</spam>
+              </a>(myDateBird) THEN SET message = concat(message, " -Este formato fecha: ", myDateBird, " es
+              correcto.");<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;if <a href="#validateCodePostalVisible">
+                <spam class="bbddFuncion">validateCodePostal</spam>
+              </a>(myCP) THEN SET message = concat(message, " -Este formato código postal: ", myCP, " es
+              correcto.");<br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if <a href="#validateImageVisible">
+                <spam class="bbddFuncion">validateImage</spam>
+              </a>(myAvatar) THEN SET message = concat(message, " -Este formato de imagen: ", myAvatar, " es
+              correcto.");<br>
+
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ELSE SET message = concat(message, " -Error este formato de imagen: ",
+              myAvatar, " es Incorrecto. Vamos Mal"); <br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;END IF; <br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;ELSE SET message = concat(message, " -Error este formato código postal: ",
+              myCP, " es Incorrecto. Vamos Mal"); <br>
+              &emsp;&emsp;&emsp;&emsp;&emsp;END IF; <br>
+              &emsp;&emsp;&emsp;&emsp;ELSE SET message = concat(message, " -Error este formato fecha: ", myDateBird, "
+              es Incorrecto. Vamos Mal");<br>
+              &emsp;&emsp;&emsp;&emsp;END IF; <br>
+              &emsp;&emsp;&emsp;ELSE SET message = concat(message, " -Error formato email: ", myEmail, " es
+              incorrecto.");<br>
+              &emsp;&emsp;&emsp; END IF;<br>
+              &emsp;&emsp;ELSE SET message = concat(message, " -Error formato mobile: ", mymobile, " es
+              incorrecto.");<br>
+              &emsp;&emsp;END IF; <br>
+              &emsp;ELSE SET message = concat(message, " -Error este nif/nie: ", myNifNie, " Ya existe en la tabla
+              client. Vamos Mal"); <br>
+              &emsp;END IF; <br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateCodePostalVisible">
+            validateCodePostal(myCP) --> boolen </a>
+          <ul id="validateCodePostal" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato código postal es válido.</b></p>
+            <div class="boxIzquierda">
+              IF CHAR_LENGTH(myCP) != 5 OR !isStringNumber(myCP) THEN RETURN false;<br>
+              END IF;<br>
+              RETURN true;<br>
+              END
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateDateVisible">
+            validateDate(myDate) --> boolen </a>
+          <ul id="validateDate" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato fecha es válido.</b></p>
+            <div class="boxIzquierda">
+              RETURN (if(IFNULL(DATE(myDate), 0),true,false));
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateEmailVisible">
+            validateEmail(myEmail) --> boolen </a>
+          <ul id="validateEmail" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato de email es válido.</b></p>
+            <div class="boxIzquierda">
+              RETURN myEmail REGEXP '^[A-Z0-9._%-]+@[A-Z0-9.-]+.[A-Z]{2,63}$';
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateImageVisible">
+            validateImage(myImg) --> boolen </a>
+          <ul id="validateImage" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato puede corresponder con un nombre de imagen.</b></p>
+            <div class="boxIzquierda">
+              RETURN myImg REGEXP '[a-zA-Z0-9()_ .-].(jpe?g|gif|png)';
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateLoginVisible">
+            validateLogin(myUser, myPassword) --> varchar(200)</a>
+          <ul id="validateLogin" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato del login es válido.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              if <a href="#validateUserVisible">
+                <spam class="bbddFuncion">validateUser</spam>
+              </a><b>(myUser)</b> THEN SET message = concat(message, " -Este formato de user: ", myUser, " es
+              correcto.");<br>
+              &emsp;&emsp; if <a href="#validatePasswordVisible">
+                <spam class="bbddFuncion">validatePassword</spam>
+              </a><b>(myPassword)</b> THEN SET message = concat(message, " -Este formato de
+              password: ", myPassword, " es correcto.");<br>
+              &emsp;&emsp;ELSE SET message = concat(message, " -Error este formato de password: ", myPassword, " es
+              Incorrecto. Vamos Mal");<br>
+              &emsp;&emsp;END IF;<br>
+              ELSE SET message = concat(message, " -Error este formato de user: ", myUser, " es Incorrecto. Vamos
+              Mal");<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateMobileVisible">
+            validateMobile(myMobile) --> boolen </a>
+          <ul id="validateMobile" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si el formato del número del movil es válido.</b></p>
+            <div class="boxIzquierda">
+              RETURN (myMobile REGEXP '[6|7][0-9]{8}$')<br>
+              OR (myMobile REGEXP '[6|7][0-9]{2}[ ][0-9]{3}[ ][0-9]{3}$') OR <br>
+              (myMobile REGEXP '[6|7][0-9]{2}[-][0-9]{3}[-][0-9]{3}$');
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateNifNieVisible">
+            validateNifNie(nif)--> varchar(100)</a>
+          <ul id="validateNifNie" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Comprueba si es un documento NIF o NIE válido</b></p>
+            <div class="boxIzquierda">
+              DECLARE letter varchar(1) DEFAULT "";<br>
+              DECLARE message varchar(100) DEFAULT "";<br>
+              IF myNif REGEXP '^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]$' THEN<br>
+              &emsp; SET letter = MID(myNif, 9, 1);<br>
+              &emsp; IF letter = <a href="#getLetterNifVisible">
+                <spam class="bbddFuncion">getLetterNif</spam>
+              </a>(myNif, 1, 8)) THEN<br>
+              &emsp;&emsp; SET message = concat(" -", myNif, " Es un Nif VÁLIDO");<br>
+              &emsp;&emsp;ELSE SET message = concat(" -Error:", myNif, " Es un Nif NO VÁLIDO");<br>
+              &emsp;END IF;<br>
+              &emsp; &emsp;ELSEIF myNif REGEXP '^[KLMXYZ][0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKE]$' THEN<br>
+              &emsp; &emsp; &emsp;-- Es un NIF K, NIF L, NIF M, NIE X, NIE Y o NIE Z");<br>
+              &emsp; &emsp; &emsp;SET letter = MID(myNif, 9, 1);<br>
+              &emsp; &emsp; &emsp;IF letter = <a href="#getLetterNifVisible">
+                <spam class="bbddFuncion">getLetterNif</spam>
+              </a>(MID(myNif, 2, 7)) THEN<br>
+              &emsp; &emsp; &emsp; &emsp;SET message = concat(" -", myNif, " Es un NIF NIE VÁLIDO");<br>
+              &emsp; &emsp; &emsp; &emsp;ELSE SET message = "-Error- Es un NIF NIE NO VÁLIDO";<br>
+              &emsp; &emsp; &emsp;END IF;<br>
+              &emsp;&emsp; &emsp;ELSE SET message =concat(" -Error:", myNif, " Es un documento erróneo"); <br>
+              END IF;<br>
+              return message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validatePasswordVisible">
+            validatePassword(myPass)--> boolean)</a>
+          <ul id="validatePassword" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida si puede ser un usuario de la aplicación</b></p>
+            <div class="boxIzquierda">
+              &emsp;&emsp;-- Minimo 9 caracteres y Maximo 15.<br>
+              &emsp;&emsp;-- Comenzar por una letra mayúscula o minúscula.<br>
+              &emsp;&emsp;-- El segundo y tercero números.<br>
+              &emsp;&emsp;-- El cuarto 1 caracter especial.<br>
+              &emsp;&emsp;-- El resto letras.<br>
+              &emsp;&emsp;--. L60_romero<br>
+              RETURN myPass REGEXP '^[a-z]{1}[0-9]{2}[_-]{1}[a-z]{5,15}$';<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateStringOfLettersWithLenVisible">
+            validateStringOfLettersWithLen( string, min, max)--> varchar(150)</a>
+          <ul id="validateStringOfLettersWithLen" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida si un string son todas letras y su tamaño</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(150) DEFAULT "";<br>
+              If CHAR_LENGTH(myString) BETWEEN myMin and myMax THEN<br>
+              &emsp;if isStringLetter(myString) THEN <br>
+              &emsp; &emsp;SET message = concat (" - ok validate ", myString ," only letters");<br>
+              &emsp; &emsp;ELSE SET message = concat (" - Error validate ", myString ," NOT only letters");<br>
+              &emsp;END IF;<br>
+              ELSE SET message = concat("- Error: ",myString, " out of range BETWEEN ",myMin," and ",myMax);<br>
+              END IF;<br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateStringOfLettersSpaceWithLenVisible">
+            validateStringOfLettersSpaceWithLen( string, min, max)--> varchar(150)</a>
+          <ul id="validateStringOfLettersSpaceWithLen" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida si un string son todas letras, espacio y su tamaño</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(150) DEFAULT "";<br><br>
+              IF CHAR_LENGTH(myString) BETWEEN myMin and myMax THEN<br>
+              &emsp;IF isStringLettersSpace(myString) THEN <br>
+              &emsp;&emsp;SET message = concat (" - ok validate ", myString ," only letters and spaces") ;<br>
+              &emsp;ELSE SET message = concat (" - Error validate ", myString ," NOT only letters and spaces");<br>
+              &emsp;END IF;<br>
+              ELSE SET message = concat("- Error: ",myString, " out of range BETWEEN ",myMin," and ",myMax);<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateStringOfLettersSpaceGuidonWithLenVisible">
+            validateStringOfLettersSpaceGuidonWithLen( string, min, max)--> varchar(150)</a>
+          <ul id="validateStringOfLettersSpaceGuidonWithLen" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida si un string son todas letras, espacio, guión y su tamaño</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(150) DEFAULT "";<br><br>
+              IF CHAR_LENGTH(myString) BETWEEN myMin and myMax THEN <br>
+              &emsp;IF isStringLettersSpaceGuidon(myString) THEN <br>
+              &emsp;SET message = concat (" - ok validate ", myString ," only letters, spaces and guidon");<br>
+              &emsp;ELSE SET message = concat (" - Error validate ", myString ," NOT only letters, spaces and
+              guidon");<br>
+              &emsp;END IF;<br>
+              ELSE SET message = concat("- Error: ",myString, " out of range BETWEEN ",myMin," and ",myMax);<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="validateUserVisible">
+            validateUser(myUser)--> boolean)</a>
+          <ul id="validateUser" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Valida si un string son todas letras y su tamaño</b></p>
+            <div class="boxIzquierda">
+              &emsp;&emsp;-- Los usuarios tienen 7 dígitos.<br>
+              &emsp;&emsp;-- El primer dígito es una letra.<br>
+              &emsp;&emsp;-- Los dígitos 2 y 3 pueden ser tanto letras como números.<br>
+              &emsp;&emsp;-- Los 4 últimos son números.<br>
+              RETURN myUser REGEXP '^[a-z]{1}([a-z]{2}|[0-9]{2}|[a-z0-9]{2})([0-9]{4})$';<br>
+            </div>
+          </ul>
+        </div>
+
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyClientVisible">
+            verifyClient(myNifNie, myEmail, myCP)--> varchar(200) </a>
+          <ul id="verifyClient" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar los datos del cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              if !<a href="#existClient_nifVisible">
+                <spam class="bbddFuncion">existClient_nif</spam>
+              </a>(myNifNie) THEN SET message = concat(message, " -Este nif/nie: ", myNifNie, " No existe en la tabla
+              client."); <br>
+              &emsp;if !<a href="#existClient_emailVisible">
+                <spam class="bbddFuncion">existClient_email</spam>
+              </a>(myEmail) THEN SET message = concat(message, " -Este email: ", myEmail, " No existe en la tabla
+              client."); <br>
+              &emsp;&emsp;if <a href="#verifyCodePostalVisible">
+                <spam class="bbddFuncion">verifyCodePostal</spam>
+              </a>(myCP) THEN SET message = concat(message, " -Este código postal: ", myCP, " existe, es
+              correcto.");<br>
+              &emsp;&emsp;&emsp;
+              &emsp;&emsp;ELSE SET message = concat(message, " -Error este código postal: ", myCP, " No existe. Vamos
+              Mal");<br>
+              &emsp;&emsp;END IF;<br>
+              &emsp;ELSE SET message = concat(message, " -Error este email: ", myEmail, " Ya existe en la tabla client.
+              Vamos Mal");<br>
+              &emsp;END IF;<br>
+              ELSE SET message = concat(message, " -Error este nif o nie: ", myNifNie, " Ya existe en la tabla client.
+              Vamos Mal");<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyClient_updateVisible">
+            verifyClient_update(myNifNie, myEmail, myCP)--> varchar(200) </a>
+          <ul id="verifyClient_update" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar los datos del cliente.</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              if !<a href="#existClient_nif_updateVisible">
+                <spam class="bbddFuncion">existClient_nif_update</spam>
+              </a>(myIdClient, myNifNie) THEN SET message = concat(message, " -Este nif/nie: ", myNifNie, " No existe en
+              la tabla
+              client. Puedes usarlo"); <br>
+              &emsp;if !<a href="#existClient_email_updateVisible">
+                <spam class="bbddFuncion">existClient_email_update</spam>
+              </a>(myIdClient, myEmail) THEN SET message = concat(message, " -Este email: ", myEmail, " No existe en la
+              tabla
+              client. Puedes usarlo"); <br>
+              &emsp;&emsp;if <a href="#verifyCodePostalVisible">
+                <spam class="bbddFuncion">verifyCodePostal</spam>
+              </a>(myCP) THEN SET message = concat(message, " -Este código postal: ", myCP, " existe, es
+              correcto. Puedes usarlo");<br>
+              &emsp;&emsp;&emsp;
+              &emsp;&emsp;ELSE SET message = concat(message, " -Error este código postal: ", myCP, " No existe. Vamos
+              Mal");<br>
+              &emsp;&emsp;END IF;<br>
+              &emsp;ELSE SET message = concat(message, " -Error este email: ", myEmail, " Ya existe en la tabla client.
+              Vamos Mal");<br>
+              &emsp;END IF;<br>
+              ELSE SET message = concat(message, " -Error este nif o nie: ", myNifNie, " Ya existe en la tabla client.
+              Vamos Mal");<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyCodePostalVisible">
+            verifyCodePostal(myCP)--> boolean </a>
+          <ul id="verifyCodePostal" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar un código postal.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `postalcode` WHERE `postalCode` = myCp);
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyCompanyNameProviderVisible">
+            verifyCompanyNameProvider(nameProvider)--> boolean </a>
+          <ul id="verifyCompanyNameProvider" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar si existe el nombre de proveedor.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `provider` WHERE `providerFullName` = myNameProvider);
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyLoginVisible">
+            verifyLogin(myIdClient, myUser, myPassword)--> boolean </a>
+          <ul id="verifyLogin" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar si existe el login.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `client` WHERE `idClient` = myIdClient AND `user`= myUser AND `password` =
+              MD5(myPassword));
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyMunicipalityVisible">
+            verifyMunicipality(string)--> boolean </a>
+          <ul id="verifyMunicipality" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar si existe el municipio.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `municipality` WHERE `municipalityName` = string);
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyProvinceVisible">
+            verifyProvince(string)--> boolean </a>
+          <ul id="verifyProvince" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verificar si existe la povincia.</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT count(*) FROM `province` WHERE `ProvinceName`= string);
+            </div>
+
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verifyUserVisible">
+            verifyUser(myIdClient, myUser)--> varchar(200) </a>
+          <ul id="verifyUser" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Verifica si podemos usar ese valor como usuario</b></p>
+            <div class="boxIzquierda">
+              DECLARE message varchar(2000) DEFAULT "";<br><br>
+              if !<a href="#existClient_user_updateVisible">
+                <spam class="bbddFuncion">existClient_user_update</spam>
+              </a><b>(myIdClient, myUser) </b>THEN SET message = concat(message, " -Este user: ",
+              myUser, " No existe en la tabla client. Puedes usarlo");<br>
+              &emsp;ELSE SET message = concat(message, " -Error este user: ", myUser, " Ya existe en la tabla client.
+              Vamos Mal");<br>
+              END IF;<br><br>
+              RETURN message;
+            </div>
+
+          </ul>
+        </div>
+        <!-- <div class="myIndexTable boxLook">   
+                             <a class="myIndexCell" id=".....Visible">
+                                ...... </a> 
+                             <ul id="...." class="hiddenPart nota s2"> 
+                                  <p class="boxIzquierda"><b>&emsp;..resp....</b></p>
+                                <div  class="boxIzquierda">
+                                        *** código ***
+                                </div> 
+                                 <a href="#.....Visible"><spam class="bbddFuncion">.......</spam></a>
+                             </ul> 
+                         </div>   
+                        -->
+      </div>
+    </section>
+    <section id="seccion5" class="mainWrapper center" data-scroll-spy>
+      <h2>Procedures</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddClientVisible">
+            AddClient </a>
+          <div id="AddClient" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: Lleva a cabo la insercción de un cliente.
+            </div>
+            <img src="./img/procedure/Addclient.png" alt="">
+
+            <a href="#addClientVisible">
+              <spam class="bbddFuncion">addClient</spam>
+            </a>&nbsp;&nbsp;
+            <a href="#validateClientVisible">
+              <spam class="bbddFuncion">validateClient</spam>
+            </a>&nbsp;&nbsp;
+
+            <a href="#verifyClientVisible">
+              <spam class="bbddFuncion">verifyClient</spam>
+            </a>
+
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddDetailLineBillProviderVisible">
+            AddDetailLineBillProvider </a>
+          <div id="AddDetailLineBillProvider" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: Lleva a cabo la inclusión del detalle de la factura. Por cada ejecución se guarda una
+              línea de detalle.
+            </div>
+            <img src="./img/procedure/AddDetailLineBillProvider1.png" alt="">
+            <img src="./img/procedure/AddDetailLineBillProvider2.png" alt="">
+            <a href="#checkInvoice_orderAssignmentVisible">
+              <spam class="bbddFuncion">checkInvoice_orderAssignment</spam>
+            </a>
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addHeaderBillClientVisible">
+            AddHeaderBillClient </a>
+          <div id="addHeaderBillClient" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: Añadir provisionalmente la cabecera parcial de la factura del cliente, para obtener
+              su
+              número de factura.
+            </div>
+            <img src="./img/procedure/AddHeaderBillClient.png" alt="">
+            <a href="#addHeader_bill_clientVisible">
+              <spam class="bbddFuncion">addHeader_bill_client</spam>
+            </a>
+            <a href="#getMaxCustomerInvoiceNumberVisible">
+              <spam class="bbddFuncion">getMaxCustomerInvoiceNumber</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddHeaderBillProviderVisible">
+            AddHeaderBillProvider </a>
+          <div id="AddHeaderBillProvider" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: Añadir la cabecera de la factura emitida por el proveedor.
+            </div>
+            <img src="./img/procedure/AddHeaderBillProvider1.png" alt="">
+            <img src="./img/procedure/AddHeaderBillProvider2.png" alt="">
+            <a href="#verifyCompanyNameProviderVisible">
+              <spam class="bbddFuncion">verifyCompanyNameProvider</spam>
+            </a>
+            <a href="#getMaxIdRowHBPVisible">
+              <spam class="bbddFuncion">getMaxIdRowHBP</spam>
+            </a>
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddShoppingCartVisible">
+            AddShoppingCart</a>
+          <div id="AddShoppingCart" class="hiddenPart nota s2">
+            <img src="./img/procedure/AddShoppingCart.png" alt="">
+            <a href="#checkIdClientVisible" class="bbddFuncion">checkIdClient</a>
+            <a href="#checkIdProductVisible" class="bbddFuncion">checkIdProduct</a>
+            <a href="#checkUnitsCarVisible" class="bbddFuncion">checkUnitsCar</a>
+            <a href="#addShoppingCartVisible" class="bbddFuncion">addShoppingCart</a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="DeleteClientVisible">
+            DeleteClient</a>
+          <div id="DeleteClient" class="hiddenPart nota s2">
+            <img src="./img/procedure/deleteClient01.png" alt="">
+            <a href="#deleteClientVisible" class="bbddFuncion">deleteClient</a>
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="DeleteShoppingCartVisible">
+            DeleteShoppingCart </a>
+          <div id="DeleteShoppingCart" class="hiddenPart nota s2">
+            <img src="./img/procedure/DeleteShoppingCart.png" alt="">
+            <a href="#validateVerifyIdClientVisible" class="bbddFuncion">validateVerifyIdClient</a>
+            <a href="#validateVerifyIdProductVisible" class="bbddFuncion">validateVerifyIdProduct</a>
+            <a href="#deleteShoppingCartVisible" class="bbddFuncion">deleteShoppingCart</a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ManageReceivedRegisterBillVisible">
+            ManageReceivedRegisterBill </a>
+          <div id="ManageReceivedRegisterBill" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              &emsp; Un proceso para gestionar los pedidos que tienen facturas:<br>
+              &emsp; &emsp; • Las facturas han sido registradas previamente.<br>
+              &emsp; &emsp; • Los pedidos han sido asignados a sus facturas correspondiente<br>
+              &emsp; &emsp; • El proceso las trata de una en una<br>
+              &emsp; &emsp; • ................<br>
+              &emsp; &emsp; &emsp; o ............<br>
+              &emsp; &emsp; &emsp; o ..................<br>
+
+            </div>
+            <img src="./img/procedure/ManageReceivedRegisterBill.png" alt="">
+            <img src="./img/procedure/ManageReceivedRegisterBill2.png" alt="">
+            <a href="#UpdateSalesAnOrderFromBillProviderVisible">
+              <spam class="bbddFuncion">UpdateSalesAndOrderFromBillProvider</spam>
+            </a>
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ManageThePurchaseVisible">
+            ManageThePurchase </a>
+          <div id="ManageThePurchase" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              &emsp; Un proceso para despachar o llevar a cabo la venta a un cliente:<br>
+              &emsp; &emsp; • La compra está en el carrito shopping_cart.<br>
+              &emsp; &emsp; • Todo lo que se venda se facturará.<br>
+              &emsp; &emsp; • Actualizar en shop_product las stockCurrent.<br>
+              &emsp; &emsp; • Si no hay unidades suficientes:<br>
+              &emsp; &emsp; &emsp; o Se facturará la parte existente.<br>
+              &emsp; &emsp; &emsp; o La otra parte se actualizará en el carrito. Pendiente para cuando se repongan
+              las
+              existencias.<br>
+
+            </div>
+            <img src="./img/procedure/ManageThePurchase.png" alt="">
+            <a href="#addHeaderBillClientVisible">
+              <spam class="bbddFuncion">AddHeaderBillClientVisible</spam>
+            </a>
+            <a href="#sufficientStockVisible">
+              <spam class="bbddFuncion">SufficientStock</spam>
+            </a>
+            <a href="#insufficientStockVisible">
+              <spam class="bbddFuncion">InsufficientStock</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="sufficientStockVisible">
+            SufficientStock</a>
+          <div id="sufficientStock" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              Si hay existencias suficientes se le factura todo: <br>
+              &emsp; &emsp; • Actualizo el stop actual de shop_product. <br>
+              &emsp; &emsp; • Añado la operación al histórico shopping_cart_historic. <br>
+              &emsp; &emsp; • Eliminarlo del carrito shopping_cart. <br>
+              &emsp; &emsp; • Añadirlo a la línea de detalle de la factura del cliente.<br>
+            </div>
+            <img src="./img/procedure/SufficientStock.png" alt="">
+            <a href="#updateShopProduct_stockCurrent_SubtractVisible">
+              <spam class="bbddFuncion">updateShopProduct_stockCurrent_Subtract</spam>
+            </a>
+            <a href="#addShoppingCartHistoricVisible">
+              <spam class="bbddFuncion">addShoppingCartHistoric</spam>
+            </a>
+            <a href="#deleteShoppingCartVisible">
+              <spam class="bbddFuncion">deleteShoppingCart</spam>
+            </a>
+            <a href="#addDetail_line_bill_clientVisible">
+              <spam class="bbddFuncion">addDetail_line_bill_client</spam>
+            </a>
+          </div>
+
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="insufficientStockVisible">
+            InsufficientStock </a>
+          <div id="insufficientStock" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              No hay existencias suficientes se le factura la parte existente: <br>
+              &emsp; &emsp; • Actualizo el stop actual de shop_product. <br>
+              &emsp; &emsp; • Añado la operación al histórico shopping_cart_historic. <br>
+              &emsp; &emsp; • Actualizo el carrito shopping_cart. <br>
+              &emsp; &emsp; • Añadirlo a la línea de detalle de la factura del cliente.<br>
+            </div>
+            <img src="./img/procedure/InsufficientStock.png" alt="">
+            <a href="#updateShopProduct_stockCurrent_SubtractVisible">
+              <spam class="bbddFuncion">updateShopProduct_stockCurrent_Subtract</spam>
+            </a>
+            <a href="#addShoppingCartHistoricVisible">
+              <spam class="bbddFuncion">addShoppingCartHistoric</spam>
+            </a>
+            <a href="#updateShoppingCart_unitVisible">
+              <spam class="bbddFuncion">updateShoppingCart_unit</spam>
+            </a>
+            <a href="#addDetail_line_bill_clientVisible">
+              <spam class="bbddFuncion">addDetail_line_bill_client</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateLoginVisible">
+            UpdateLogin</a>
+          <div id="UpdateLogin" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              Actualiza el login del cliente
+
+            </div>
+            <img src="./img/procedure/UpdateLogin.png" alt="">
+
+            <a href="#validateLoginVisible">
+              <spam class="bbddFuncion">validateLogin</spam>
+            </a>
+            &nbsp;&nbsp;
+            <a href="#verifyUserVisible">
+              <spam class="bbddFuncion">verifyUser</spam>
+            </a>
+            &nbsp;&nbsp;
+            <a href="#updateLoginVisible">
+              <spam class="bbddFuncion">updateLogin</spam>
+            </a>
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateOrderFromBillProviderVisible">
+            UpdateOrderFromBillProvider </a>
+          <div id="UpdateOrderFromBillProvider" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              Actualiza las tablas afectadas en la gestión de los pedidos recibidos
+
+            </div>
+            <img src="./img/procedure/UpdateOrderFromBillProvider.png" alt="">
+            <a href="#getOrderedUnitsVisible">
+              <spam class="bbddFuncion">getOrderedUnits</spam>
+            </a>
+            <a href="#addProviderOrderedHistoricVisible">
+              <spam class="bbddFuncion">addProviderOrderedHistoric</spam>
+            </a>
+            <a href="#updateProviderOrdered_removeTrueVisible">
+              <spam class="bbddFuncion">updateProviderOrdered_removedTrue</spam>
+            </a>
+            <a href="#updateProviderOrdered_idRowHBP_unitsOrdered_isReceivedVisible">
+              <spam class="bbddFuncion">updateProviderOrdered_idRowHBP_unitsOrdered_isReceived</spam>
+            </a>
+            <a href="#ValueTransactionVisible">
+              <spam class="bbddFuncion">ValueTransaction</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateSalesAnOrderFromBillProviderVisible">
+            UpdateSalesAnOrderFromBillProvider </a>
+          <div id="UpdateSalesAnOrderFromBillProvider" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: .
+            </div>
+            <img src="./img/procedure/UpdateSalesAnOrderFromBillProvider.png" alt="">
+            <img src="./img/procedure/UpdateSalesAnOrderFromBillProvider2.png" alt="">
+            <a href="#UpdateSalesFromBillProviderVisible">
+              <spam class="bbddFuncion">UpdateSalesFromBillProviderVisible</spam>
+            </a>
+            <a href="#UpdateOrderFromBillProviderVisible">
+              <spam class="bbddFuncion">UpdateOrderFromBillProviderVisible</spam>
+            </a>
+            <a href="#ValueTransactionVisible">
+              <spam class="bbddFuncion">ValueTransaction</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateSalesFromBillProviderVisible">
+            UpdateSalesFromBillProvider </a>
+          <div id="UpdateSalesFromBillProvider" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Responsabilidad: Actualiza la parte de ventas producida por el pedido
+            </div>
+            <img src="./img/procedure/UpdateSalesFromBillProvider1.png" alt="">
+            <img src="./img/procedure/UpdateSalesFromBillProvider2.png" alt="">
+            <a href="#getIdProductProviderOrderedVisible">
+              <spam class="bbddFuncion">getIdProductProviderOrdered</spam>
+            </a>
+            <a href="#updateShopProduct_stockCurrent_AddVisible">
+              <spam class="bbddFuncion">updateShopProduct_stockCurrent_Add</spam>
+            </a>
+            <a href="#addShopProductVisible">
+              <spam class="bbddFuncion">addShopProduct</spam>
+            </a>
+            <br>
+            <a href="#updateProviderOrdered_idProductVisible">
+              <spam class="bbddFuncion">updateProviderOrdered_idProduct</spam>
+            </a>
+            <a href="#ValueTransactionVisible">
+              <spam class="bbddFuncion">ValueTransaction</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateShoppingCartVisible">
+            UpdateShoppingCart</a>
+          <div id="UpdateShoppingCart" class="hiddenPart nota s2">
+            <img src="./img/procedure/UpdateShoppingCart.png" alt="">
+            <a href="#validateVerifyIdClientVisible" class="bbddFuncion">validateVerifyIdClient</a>
+            <a href="#validateVerifyIdProductVisible" class="bbddFuncion">validateVerifyIdProduct</a>
+            <br><br>
+            <a href="#validateVerifyUnits" class="bbddFuncion">validateVerifyUnits</a>
+            <a href="#updateShoppingCart_unitVisible" class="bbddFuncion">updateShoppingCart</a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ValueTransactionVisible">
+            ValueTransaction</a>
+          <div id="ValueTransaction" class="hiddenPart nota s2">
+            <img src="./img/procedure/ValueTransaction.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="VerifyLoginVisible">
+            VerifyLogin</a>
+          <div id="VerifyLogin" class="hiddenPart nota s2">
+            <img src="./img/procedure/VerifyLogin.png" alt="">
+            <a href="#verifyLoginVisible">
+              <spam class="bbddFuncion">verifyLogin</spam>
+            </a>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ViewShoppingCart_idClientVisible">
+            ViewShoppingCart_idClient</a>
+          <div id="ViewShoppingCart_idClient" class="hiddenPart nota s2">
+            <img src="./img/procedure/ViewShoppingCart_idClient.png" alt="">
+
+          </div>
+        </div>
+
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                <img src="./img/procedure/......" alt="">  
+                                 <a href="#...Visible" class="nota">........</a>                                
+                            </div>                                            
+                      </div>  -->
+      </div>
+    </section>
+    <section id="seccion6" class="mainWrapper center" data-scroll-spy>
+      <h2>Tests</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebastriggersVisible">
+            Pruebas Disparadores </a>
+          <div id="pruebastriggers" class="hiddenPart nota s2">
+
+            <img src="./img/pruebas/pruebasTriggers.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebasAddDetailLineBillProviderVisible">
+            AddDetailLineBillProvider</a>
+          <div id="pruebasAddDetailLineBillProvider" class="hiddenPart nota s2">
+            <img src="./img/pruebas/pruebasProcedureAddHeaderBillProvider.png" alt="">
+            <img src="./img/pruebas/pruebasAddDetailLineBillProvider2.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebasHeaderBillProviderVisible">
+            AddHeaderBillProvider </a>
+          <div id="pruebasHeaderBillProvider" class="hiddenPart nota s2">
+            <img src="./img/pruebas/pruebasProcedureAddHeaderBillProvider.png" alt="">
+            <img src="./img/pruebas/pruebasProcedureAddHeaderBillProvider2.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebasProcedureManageThePurchaseVisible">
+            ManageThePurchase </a>
+          <div id="pruebasProcedureManageThePurchase" class="hiddenPart nota s2">
+
+            <img src="./img/pruebas/pruebasProcedureManageThePurchase.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebasShoppingCartCRUDVisible">
+            ShoppingCart CRUD </a>
+          <div id="pruebasShoppingCartCRUD" class="hiddenPart nota s2">
+
+            <img src="./img/pruebas/pruebasProcedureShoppingCartCRUD.png" alt="">
+
+          </div>
+        </div>
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                            ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                    <a href="./document/...." class="myIndexCell"  >
+                                        Ver documento on line ........ </a>                                     
+                                    <img src="./img/document/......" alt="">                                  
+                            </div>                                            
+                    </div>  -->
+      </div>
+    </section>
+    <section id="seccion7" class="mainWrapper center" data-scroll-spy>
+      <h2>Message</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="messageAddDetailLineBillProviderVisible">
+            AddDetailLineBillProvider</a>
+          <div id="messageAddDetailLineBillProvider" class="hiddenPart nota s2">
+            <img src="./img/pruebas/pruebasProcedureAddHeaderBillProvider.png" alt="">
+            <img src="./img/pruebas/pruebasAddDetailLineBillProvider2.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddHeaderBillProvidermessageVisible">
+            AddHeaderBillProvider </a>
+          <div id="AddHeaderBillProvidermessage" class="hiddenPart nota s2">
+            <img src="./img/message/AddHeaderBillProvider.png" alt="">
+            <img src="./img/message/AddHeaderBillProvider2.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddShoppingCartmessageVisible">
+            AddShoppingCart </a>
+          <div id="AddShoppingCartmessage" class="hiddenPart nota s2">
+            <img src="./img/message/AddShoppingCart.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ManageThePurchaseSufficientStockmessageVisible">
+            ManageThePurchase --> CALL SufficientStock() </a>
+          <div id="ManageThePurchaseSufficientStockmessage" class="hiddenPart nota s2">
+            <img src="./img/message/ManageThePurchaseSufficientStockmessage.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ManageThePurchaseInsufficientStockmessageVisible">
+            ManageThePurchase --> CALL InsufficientStock() </a>
+          <div id="ManageThePurchaseInsufficientStockmessage" class="hiddenPart nota s2">
+            <img src="./img/message/ManageThePurchaseInsufficientStockmessage.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="ManageThePurchaseStock0messageVisible">
+            ManageThePurchase con existencias 0. </a>
+          <div id="ManageThePurchaseStock0message" class="hiddenPart nota s2">
+            <img src="./img/message/ManageThePurchaseStock0message.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="DeleteShoppingCartmessageVisible">
+            DeleteShoppingCart </a>
+          <div id="DeleteShoppingCartmessage" class="hiddenPart nota s2">
+            <img src="./img/message/DeleteShoppingCart.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="UpdateShoppingCartmessageVisible">
+            UpdateShoppingCart </a>
+          <div id="UpdateShoppingCartmessage" class="hiddenPart nota s2">
+            <img src="./img/message/UpdateShoppingCart.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="viewShoppingCart_idClientVisible">
+            Estado actual del Carrito de un Cliente</a>
+          <div id="viewShoppingCart_idClient" class="hiddenPart nota s2">
+            <img src='./img/view/ViewShoppingCart_idClient.png'> </img>
+          </div>
+        </div>
+        <!--  <div class="myIndexTable boxLook">  
+                                <a class="myIndexCell" id="......Visible">
+                                   ......... </a> 
+                                <div id="......" class="hiddenPart nota s2">                        
+                                        <a href="./document/...." class="myIndexCell"  >
+                                            Ver documento on line ........ </a>                                     
+                                        <img src="./img/document/......" alt="">                                  
+                                </div>                                            
+                         </div>  -->
+      </div>
+
+    </section>
+    <section id="seccion8" class="mainWrapper center" data-scroll-spy>
+      <h2> Views</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="viewShoppingCartVisible">
+            Mostrar el estado actual del Carrito </a>
+          <div id="viewShoppingCart" class="hiddenPart nota s2">
+            <img src='./img/view/shopping_cart_view Estado Actual del carrito.png'> </img>
+            <img src='./img/view/shopping_cart_view Estado Actual del carrito CODE.png'> </img>
+          </div>
+        </div>
+
+
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                    <a href="./document/...." class="myIndexCell"  >
+                                        Ver documento on line ........ </a>                                     
+                                    <img src="./img/document/......" alt="">                                  
+                            </div>                                            
+                     </div>  -->
+      </div>
+
+    </section>
+    <section id="seccion9" class="mainWrapper center" data-scroll-spy>
+      <h2>Gestión Carrito</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="altaCarritoVisible">
+            Alta Carrito </a>
+          <div id="altaCarrito" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Posibilidad de incluir un articulo por parte de un cliente en el
+                carrito.</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#AddShoppingCartVisible">
+                <spam class="bbddFuncion">AddShoppingCart</spam>
+              </a> <b>(in idClient, in idProduct, in units, out response, inout message)</b><br><br>
+              &emsp; Mensaje:<a href="#AddShoppingCartmessageVisible">
+                <spam class="bbddFuncion">Add ShoppingCart Message</spam>
+              </a> <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="deleteCarritoVisible">
+            Eliminar del Carrito </a>
+          <div id="deleteCarrito" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Posibilidad de eliminar un articulo por parte de un cliente en el
+                carrito.</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#DeleteShoppingCartVisible">
+                <spam class="bbddFuncion">Delete ShoppingCart</spam>
+              </a> <b>(in idClient, in idProduct, out response, inout message)</b><br><br>
+              &emsp; Mensaje:<a href="#DeleteShoppingCartmessageVisible">
+                <spam class="bbddFuncion">Delete ShoppingCart Message</spam>
+              </a> <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="modificarCarritoVisible">
+            Modificar del Carrito </a>
+          <div id="modificarCarrito" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Posibilidad de modificar un articulo por parte de un cliente en el
+                carrito.</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#UpdateShoppingCartVisible">
+                <spam class="bbddFuncion">Update ShoppingCart</spam>
+              </a> <b>(in idClient, in idProduct, out response, inout message)</b><br><br>
+              &emsp; Mensaje:<a href="#UpdateShoppingCartmessageVisible">
+                <spam class="bbddFuncion">Update ShoppingCart Message</spam>
+              </a> <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myIndexTable boxLook">
+        <a class="myIndexCell" id="verCarritoVisible">
+          Ver el Carrito </a>
+        <div id="verCarrito" class="hiddenPart nota s2">
+          <p class="boxIzquierda"><b>&emsp;Posibilidad de ver el estado actual del carrito.</b></p>
+          <div class="boxIzquierda">
+            Proceso General:<a href="#shopping_cart_viewVisible">
+              <spam class="bbddFuncion">View ShoppingCart</spam>
+            </a> <b>(in idClient, in idProduct, out response, inout message)</b><br><br>
+
+          </div>
+        </div>
+      </div>
+      <div class="myIndexTable boxLook">
+        <a class="myIndexCell" id="despacharCarritoVisible">
+          Despachar Carrito </a>
+        <div id="despacharCarrito" class="hiddenPart nota s2">
+          <p class="boxIzquierda"><b>&emsp;Poder convertir en venta la petición de compra de un cliente en el
+              carrito.</b></p>
+          <div class="boxIzquierda">
+            Proceso General:<a href="#ManageThePurchaseVisible">
+              <spam class="bbddFuncion">ManageThePurchase</spam>
+            </a> <b>(in idClient, out message)</b><br><br>
+            &emsp; Mensaje:<a href="#ManageThePurchaseSufficientStockmessageVisible">
+              <spam class="bbddFuncion">ManageThePurchase SufficientStock Message</spam>
+            </a> <br>
+            &emsp; Mensaje:<a href="#ManageThePurchaseInsufficientStockmessageVisible">
+              <spam class="bbddFuncion">ManageThePurchase InsufficientStock Message</spam>
+            </a> <br>
+            &emsp; Mensaje:<a href="#ManageThePurchaseStock0messageVisible">
+              <spam class="bbddFuncion">ManageThePurchase 0 Stock Message</spam>
+            </a> <br>
+            <img src="./img/testIntegridad/despacharCarrito_carrito.png" alt="">
+            <img src="./img/testIntegridad/despacharCarrito_ManagerPurschare.png" alt="">
+            <img src="./img/testIntegridad/despacharCarrito_Message.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                <p class="boxIzquierda"><b>&emsp;............. </b></p>  
+                                <div  class="boxIzquierda">
+                                    <a href="#.....Visible"><spam class="bbddFuncion">......</spam></a> <b>.......</b>
+                                </div> 
+                            </div>                                            
+                     </div>
+                     <iframe src='./document/CarritoDespachar.html' width='100%' height='565px' frameborder='0'> </iframe>  -->
+      </div>
+
+    </section>
+    <section id="seccion10" class="mainWrapper center" data-scroll-spy>
+      <h2>Gestión Proveedor</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="registarCabeceraProveedorVisible"> Registrar Cabecera Factura </a>
+          <div id="registarCabeceraProveedor" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Poder registrar la cabecera de la factura que emite el proveedor.</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#AddHeaderBillProviderVisible">
+                <spam class="bbddFuncion">AddHeaderBillProvider</spam>
+              </a> <b>(in idBillProvider, in billDateProvider, in billCompanyNameProvider, in shippingTransport, in
+                netAmount, in ivaAmount , in totalBill, in discount, out response, inout message)</b><br><br>
+              &emsp; Mensaje:<a href="#AddHeaderBillProvidermessageVisible">
+                <spam class="bbddFuncion">AddHeaderBillProvider Message</spam>
+              </a> <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="registarLineaDetalleProveedorVisible"> Registrar Detalle Factura </a>
+          <div id="registarLineaDetalleProveedor" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Poder registrar el detalle de la factura que emite el proveedor.</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#AddDetailLineBillProviderVisible">
+                <spam class="bbddFuncion">AddDetailLineBillProvider</spam>
+              </a> <b>(in idRowHBP, in orderLine, in concept, in units, in price, in memory, in memoryIn, in color, out
+                response, inout message)</b><br><br>
+              &emsp; Mensaje:<a href="#AddHeaderBillProvidermessageVisible">
+                <spam class="bbddFuncion">AddDetailLineBillProvider Message</spam>
+              </a> <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GPManageReceivedRegisterBillVisible"> Manage Received Register Bill </a>
+          <div id="GPManageReceivedRegisterBill" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Gestionar todo lo facturado por proveedor</b></p>
+            <div class="boxIzquierda">
+              Proceso General:<a href="#UpdateSalesAnOrderFromBillProviderVisible">
+                <spam class="bbddFuncion">UpdateSalesAndOrderFromBillProvider</spam>
+              </a> <b> (myIdRowHBP, message)</b><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion11" class="mainWrapper center" data-scroll-spy>
+      <h2>Gestión Cliente</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="registarClienteVisible"> Registrar Cliente</a>
+          &nbsp;&nbsp;
+          <div id="registarCliente" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acción para registrar a un cliente.</b>
+              <a href="#AddClientVisible">
+                <spam class="bbddFuncion">AddClient</spam>
+              </a>
+            </p>
+
+            <img src='./img/procedure/Addclient.png' />
+            <img src='./img/testIntegridad/addclientEsquema02.png' />
+            <img src='./img/testIntegridad/addclientEsquema03.png' />
+            <img src='./img/testIntegridad/addclient_in.png' />
+            <img src='./img/testIntegridad/addclient_message.png' />
+            <img src='./img/testIntegridad/addclientEsquema04.png' />
+          </div>
+        </div>
+      </div>
+
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="eliminarClienteVisible"> Eliminar Cliente</a>
+          &nbsp;&nbsp;
+          <div id="eliminarCliente" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acción para eliminar a un cliente.</b>
+              <a href="#DeleteClientVisible">
+                <spam class="bbddFuncion">DeleteClient</spam>
+              </a>
+            </p>
+            <img src='./img/testIntegridad/deleteClient01.png' />
+            <img src='./img/testIntegridad/deleteclient_in.png' />
+            <img src='./img/testIntegridad/deleteclient_message.png' />
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="modificarClienteVisible"> Modificar Cliente</a>
+          &nbsp;&nbsp;
+          <div id="modificarCliente" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acción para modificar los datos de un cliente.</b>
+              <a href="#UpdateClientVisible">
+                <spam class="bbddFuncion">UpdateClient</spam>
+              </a>
+            </p>
+            <img src='./img/testIntegridad/UpdateClient01.png' />
+            <img src='./img/testIntegridad/updateclientEsquema02.png' />
+            <img src='./img/testIntegridad/addclientEsquema03.png' />
+            <img src='./img/testIntegridad/updateclient_in.png' />
+            <img src='./img/testIntegridad/updateclient_message.png' />
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="modificarLoginVisible"> Update Login</a>
+          &nbsp;&nbsp;
+          <div id="modificarLogin" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acción para modificar el login de un cliente.</b>
+              <a href="#UpdateLoginVisible">
+                <spam class="bbddFuncion">UpdateLogin</spam>
+              </a>
+            </p>
+
+            <img src='./img/procedure/UpdateLogin.png' />
+            <img src='./img/testIntegridad/UpdateLogin_in.png' />
+            <img src='./img/testIntegridad/UpdateLogin_message.png' />
+
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verificarLoginVisible"> Verify Login</a>
+          &nbsp;&nbsp;
+          <div id="verificarLogin" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Acción para verificar el login de un cliente.</b>
+              <a href="#VerifyLoginVisible">
+                <spam class="bbddFuncion">VerifyLogin</spam>
+              </a>
+            </p>
+
+            <img src='./img/procedure/VerifyLogin.png' />
+            <img src='./img/testIntegridad/VerifyLogin_in.png' />
+            <h1>message: 1</h1>
+
+          </div>
+        </div>
+      </div>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="verClienteVisible"> Ver Cliente</a>
+          &nbsp;&nbsp;
+          <div id="verCliente" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Vista de la tabla client.</b>
+
+            </p>
+            <img src='./img/view/client_view.png' />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seccion12" class="mainWrapper center" data-scroll-spy>
+      <h2>Pruebas Globales y de Integración</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pruebaIntegracion01Visible"> Prueba Julio 2020</a>
+          <div id="pruebaIntegracion01" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp;Primera quincena Julio 2020</b></p>
+            <div class="boxIzquierda">
+              <iframe src="img/testIntegridad/Test 16 de Julio.HTML" height="600" width="700"
+                title="Iframe Example"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  <div class="myIndexTable boxLook">  
+                    <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                    <div id="......" class="hiddenPart nota s2">                        
+                        <p class="boxIzquierda"><b>&emsp;............. </b></p>  
+                        <div  class="boxIzquierda">
+                            <a href="#.....Visible"><spam class="bbddFuncion">......</spam></a> <b>.......</b>
+                        </div> 
+                    </div>                                            
+                </div>
+        <iframe src='./document/CarritoDespachar.html' width='100%' height='565px' frameborder='0'> </iframe>  -->
+
+
+  </main>
+  <button class="scroll-top-btn hidden">
+    &#11014;
+  </button>
+  <buttom class="dark-theme-btn">🌙</buttom>
+
+  <script src="js/index2.js"></script>
+  <script src="js/jHarnina20v5.js"></script>
+
+
+</body>
+
+</html>

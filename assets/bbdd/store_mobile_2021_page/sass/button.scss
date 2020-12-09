@@ -1,0 +1,88 @@
+.boton01 {
+	font-size:1em;
+	color:white;
+    width: 100%;
+    height: auto;
+	padding: 0.1em;
+	margin:auto;
+	box-shadow: $sombraBoton;
+	margin-top:0.1em;
+	text-align:center;
+	text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 1);
+	border-radius:0.2em;
+	cursor:pointer;
+	border: none;
+}		
+.boton01:hover {
+  transform:scale(1.05);
+  cursor:pointer;
+  box-shadow: $sombraBotonHover;
+  border-radius: $radiusCinco;
+}
+.boton01:active {
+  transform:scale(1.0);
+  cursor:pointer;
+  box-shadow: $sombraBotonClick;
+  border-radius: $radiusCinco;
+}
+
+.boton02 {
+    font-size:1em;
+	color:white;
+    background-color: #90DDD2;
+	 width: 100%;
+    height: auto;
+	margin-top: 0.3em;
+	padding: 0.1em;
+	box-shadow: 0px 0px 3px #136C60 inset;
+	-webkit-box-shadow: 0px 0px 3px #136C60 inset;
+	-o-box-shadow: 0px 0px 3px #136C60 inset;
+	-moz-box-shadow: 0px 0px 3px #136C60 inset;
+	-ms-box-shadow: 0px 0px 3px #136C60 inset;  
+    
+}
+.boton02:hover{
+     -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    cursor:pointer;
+     -webkit-box-shadow: 0px 5px 0px hsl(171,53%,42%), 0px 10px 10px #000, 0px 0px 3px #136C60 inset;
+    border-radius: 3px;
+}
+.boton02:active {
+     -webkit-transform: scale(1.2) translateY(3px);
+        transform: scale(1.2) translateY(3px);
+        -webkit-box-shadow:0px 3px 0px hsl(171,53%,42%), 0px 5px 5px #000, 0px 0px 3px #136C60 inset;
+      border-radius: 3PX; 
+}
+
+.boton03 {
+	box-shadow:inset -1px 0px 14px 4px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:11px;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding:0.1px 0.5em;
+	text-decoration:none;
+	text-shadow:1px 0px 12px #ded17c;
+	&:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ &:hover {
+	 -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    cursor:pointer;
+     -webkit-box-shadow: 0px 5px 0px hsl(171,53%,42%), 0px 10px 10px #000, 0px 0px 3px #136C60 inset;
+    border-radius: 3px;
+}
+ }
+        

@@ -1,0 +1,18 @@
+.shadow01{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.shadow02{
+    -webkit-box-shadow: 26px 24px 52px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 26px 24px 52px 0px rgba(0,0,0,0.75);
+box-shadow: 26px 24px 52px 0px rgba(0,0,0,0.75);
+}
+
+$sombraBoton: 0px 0px 3px #136C60 inset;
+$sombraBotonClick: 0px 3px 0px #808480, 0px 5px 5px #808480, 0px 0px 3px #808480 inset;
+$sombraBotonHover: 0px 5px 0px #808480, 0px 10px 10px #808480, 0px 0px 3px #808480 inset;
+
+$sombraBotonHoverFooter: 0px 5px 0px gray, 0px 10px 10px gray, 0px 0px 3px gray inset;
+$sombraBotonClickFooter: 0px 3px 0px gray, 0px 5px 5px gray, 0px 0px 3px gray inset;
+$sombraDado: 0px 0px 15px #000 inset,0px 0px 5px #000;

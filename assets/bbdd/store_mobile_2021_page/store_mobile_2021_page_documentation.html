@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Fundamentos 2020</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+</head>
+
+<body data-dark>
+  <header class="header">
+    <h1>BBDD STORE ** DAM 19-20 PAGE</h1>
+  </header>
+  <button class="panel-btn  hamburger--vortex " type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1" data-scroll-spy>Introduction</a>
+      <a href="#seccion2" data-scroll-spy>Tables</a>
+      <a href="#seccion3" data-scroll-spy>Triggers</a>
+      <a href="#seccion4" data-scroll-spy>Functions</a>
+      <a href="#seccion5" data-scroll-spy>Procedures</a>
+      <a href="#seccion6" data-scroll-spy>Test</a>
+
+
+    </nav>
+  </aside>
+  <main>
+    <section id="seccion1" class="mainWrapper center" data-scroll-spy>
+      <h2>Introduction</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell menuLook" id="introduccionVisible"> Introduction</a>
+
+          <ul id="introduccion" class="hiddenPart nota s2">
+            <li>Somos gente que nos gusta hacer bien las cosas.</li>
+            <li>El objetivo de nuestros ejercicios es la calidad.</li>
+            <li>Calidad mejor que cantidad.</li>
+            <li>Buenas Prácticas</li>
+            <br>
+            <b>
+              <li><a id="tareabbddVisible" class="bbddFuncion">Nuestra Tienda DAM:</a>
+            </b></li>
+            <ul id="tareabbdd" class="hiddenPart nota s2"><br>
+              <b>
+                <li><a id="gestioncarritoVisible" class="bbddFuncion">Gestión del carrito</a>
+              </b></li>
+              <ul id="gestioncarrito" class="hiddenPart nota s2">
+                <li><a href="#altaCarritoVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Alta</spam>
+                  </a></li>
+
+              </ul>
+              <br><b>
+                <li><a id="gestionproveedorVisible" class="bbddFuncion">Gestión del proveedor</a>
+              </b></li>
+              <ul id="gestionproveedor" class="hiddenPart nota s2">
+                <li><a href="#registarCabeceraProveedorVisible">
+                    <spam class="bbddFuncion menuLook" id="gc_alta">Registrar cabecera de la Factura</spam>
+                  </a></li>
+
+
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      </h2>
+    </section>
+    <section id="seccion2" class="mainWrapper center" data-scroll-spy>
+      <h2>Tables</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="bodyVisible">
+            body </a>
+          <ul id="body" class="hiddenPart nota s2">
+            <p><b>Tabla temporal para resolver get body</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_body.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="branchVisible">
+            branch </a>
+          <ul id="branch" class="hiddenPart nota s2">
+            <p><b>Refleja las distintas ramas de cada página.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_branch.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filecssVisible">
+            filecss </a>
+          <ul id="filecss" class="hiddenPart nota s2">
+            <p><b>Recoge los archivos css de la aplicación</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_filecss.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filecsswebVisible">
+            filecssweb</a>
+          <ul id="filecssweb" class="hiddenPart nota s2">
+            <p><b>Ficheros css vinculados a la web</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_filecssweb.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filejsVisible">
+            filejs </a>
+          <ul id="filejs" class="hiddenPart nota s2">
+            <p><b>Los ficgeros js internos de la apicación</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_filejs.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filejswebVisible">
+            filejsweb </a>
+          <ul id="filejsweb" class="hiddenPart nota s2">
+            <p><b>Los ficheros js que están en la web</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_filejsweb.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filelinkhrefVisible">
+            filelinkhref </a>
+          <ul id="filelinkhref" class="hiddenPart nota s2">
+            <p><b>Los link href que no son css</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_ filelinkhref.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="filemetadataVisible">
+            filemetadata </a>
+          <ul id="filemetadata" class="hiddenPart nota s2">
+            <p><b>Los metada de la aplicación</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_filemetadata.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="forestVisible">
+            forest </a>
+          <ul id="forest" class="hiddenPart nota s2">
+            <p><b>El contenido de las ramas</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_forest.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="leafVisible">
+            leaf </a>
+          <ul id="leaf" class="hiddenPart nota s2">
+            <p><b>Las hojas o nodos terminales de las ramas</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_leaf.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="nodeVisible">
+            node </a>
+          <ul id="node" class="hiddenPart nota s2">
+            <p><b>Los nodos de las ramas</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_node.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="pageVisible">
+            page </a>
+          <ul id="page" class="hiddenPart nota s2">
+            <p><b>Las páginas logicas de la aplicación</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filecssVisible">
+            page_filecss </a>
+          <ul id="page_filecss" class="hiddenPart nota s2">
+            <p><b>Los ficheros css internos de la página</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filecss.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filecsswebVisible">
+            page_filecssweb </a>
+          <ul id="page_filecssweb" class="hiddenPart nota s2">
+            <p><b>Los css externos del la página.</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filecssweb.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filejsVisible">
+            page_filejs </a>
+          <ul id="page_filejs" class="hiddenPart nota s2">
+            <p><b>Los ficheros js internos de la página</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filejs.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filejswebVisible">
+            page_filejsweb </a>
+          <ul id="page_filejsweb" class="hiddenPart nota s2">
+            <p><b>Los ficheros js externos de la página</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filejsweb.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filelinkhrefVisible">
+            page_filelinkhref </a>
+          <ul id="page_filelinkhref" class="hiddenPart nota s2">
+            <p><b>Las referencias link href de la página</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filelinkhref.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="page_filemetadataVisible">
+            page_filemetadata </a>
+          <ul id="page_filemetadata" class="hiddenPart nota s2">
+            <p><b>Las referencias meta de la página</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/tabla_page_filemetadata.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="visitVisible">
+            visit</a>
+          <ul id="visit" class="hiddenPart nota s2">
+            <p><b>Registro de las visitas a las páginas</b></p>
+            <div class="boxIzquierda">
+              <img src="./img/tablas/visit_estr.png" alt=""><br><br>
+              <img src="./img/tablas/visit_view.png" alt="">
+            </div>
+          </ul>
+        </div>
+        <!-- <div class="myIndexTable boxLook">   
+                             <a class="myIndexCell" id=".....Visible">
+                                ...... </a> 
+                             <ul id="...." class="hiddenPart nota s2"> 
+                                <p><b>Responsabilidad: --------</b></p>
+                                <div  class="boxIzquierda">
+                                       <img src="./img/tablas/" alt="">
+                                </div> 
+                             </ul> 
+                         </div>   
+                        -->
+      </div>
+    </section>
+    <section id="seccion3" class="mainWrapper center" data-scroll-spy>
+      <h2>Triggers</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="detail_line_bill_provider_BIVisible">
+            detail_line_bill_provider_BI </a>
+          <ul id="detail_line_bill_provider_BI" class="hiddenPart nota s2">
+            <p><b> Responsabilidad: Asignar a pedidos de proveedores la línea de la factura que acaba de generar.</b>
+            </p>
+            <br>
+            <div class="boxIzquierda">
+              UPDATE `provider_ordered` SET `idRowHBP`= new.idRowHBP WHERE<br>
+              `idProvider` = (SELECT `idProvider` FROM `provider` WHERE `providerFullName` =
+              new.billCompanyNameProvider) AND<br>
+              locate(new.concept,`nameModel`) AND locate(new.memory,`memory`) AND locate(new.memoryIn,`memoryIn`) AND
+              locate(new.color,`color`) AND ! `removed`;
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="seccion4" class="mainWrapper center" data-scroll-spy>
+      <h2>Functions</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="addBodyTempVisible">
+            addBodyTemp(myIdPage)--> boolean </a>
+          <ul id="addBodyTemp" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Guardar en la tabla body todas las ramas y hojas de la página</b></p>
+            <div class="boxIzquierda">
+              DECLARE state bool DEFAULT false;<br><br>
+              DELETE FROM body;<br><br>
+              INSERT INTO `body`(`hierarchicalLevel`, `orderNode`, `fatherNode`, `idNode`, `idbranch`)<br>
+              &emsp; SELECT a.`hierarchicalLevel`, a.`orderNode`, a.`fatherNode`, a.`idNode`, a.`idBranch`<br>
+              &emsp;FROM `branch` a, `branch` b<br>
+              &emsp;WHERE (a.`fatherNode` = b.`idBranch` or a.`fatherNode`= 0) AND a.`idPage` = IdPage<br>
+              &emsp;GROUP BY a.`hierarchicalLevel`, a.`orderNode`, a.`idNode`, a.`idBranch`;<br><br>
+              IF ROW_COUNT() > 0 THEN SET state = true;<br>
+              END IF;<br><br>
+
+              INSERT INTO `body`(`hierarchicalLevel`, `orderNode`, `fatherNode`, `idNode`, `idBranch`,`nodeyn`) <br>
+              &emsp;SELECT a.`hierarchicalLevel` + 1, b.OrderComponent, b.idBranch, b.idLeaf, ((1000 * b.idBranch) +
+              b.idLeaf + b.OrderComponent), 0 <br>
+              &emsp;FROM `branch` a, forest b<br>
+              &emsp; WHERE a.`idBranch` = b.idBranch AND a.`idPage` = IdPage;<br><br>
+
+              IF ROW_COUNT() > 0 THEN SET state = true;<br>
+              END IF;<br><br>
+
+              return state;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getBranchsVisible">
+            getBranchs()--> int </a>
+          <ul id="getBranchs" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve el número de filas no inspeccionadas de la tabla body</b></p>
+            <div class="boxIzquierda">
+              RETURN (select COUNT(*) from body where `finished` = 0);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getCloseTagVisible">
+            getCloseTag(myIdNode)--> varchar(10) </a>
+          <ul id="getCloseTag" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve la etiqueta de cierre</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `nodeFinish` FROM `node` WHERE `idNode` = myNode);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getLeafVisible">
+            getLeaf(myIdLeaf)--> varchar(200) </a>
+          <ul id="getLeaf" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve el contenido de una hoja (leaf)</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `leaf` FROM `leaf` WHERE `idleaf` = myIdLeaf);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getStartTagVisible">
+            getStartTag(myIdNode)--> varchar(200) </a>
+          <ul id="getStartTag" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve el contenido de la etiqueta de apertura</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `nodeStar` FROM `node` WHERE `idNode` = myIdNode);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="getTitlePageVisible">
+            getTitlePage(idPage)--> varchar(100) </a>
+          <ul id="getTitlePage" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Devuelve el titulo de una página</b></p>
+            <div class="boxIzquierda">
+              RETURN (SELECT `titlePage` FROM `page` WHERE `idPage` = idPage);
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="isChildrenVisible">
+            isChildren(myIdBranch)--> boolean </a>
+          <ul id="isChildren" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Indica si una rama tiene otras ramas</b></p>
+            <div class="boxIzquierda">
+              IF (SELECT COUNT(*) FROM `branch` WHERE `fatherNode` = myIdBranch) <br>
+              &emsp;&emsp;THEN RETURN true;<br>
+              END IF;<br>
+              RETURN false;
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateBodyVisitedTrueVisible">
+            updateBodyVisitedTrue(myIdBranch)--> boolean </a>
+          <ul id="updateBodyVisitedTrue" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Rama visitada</b></p>
+            <div class="boxIzquierda">
+              UPDATE `body` SET `visited`= 1 WHERE `idBranch`= myIdBranch; <br><br>
+
+              IF ROW_COUNT() > 0 THEN RETURN true;<br>
+              &emsp;ELSE RETURN false;<br>
+              END IF;<br>
+            </div>
+          </ul>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="updateBranchFinishVisible">
+            updateBranchFinish(myIdBranch)--> boolean </a>
+          <ul id="updateBranchFinish" class="hiddenPart nota s2">
+            <p class="boxIzquierda"><b>&emsp; Rama ya terminada de inspeccionar</b></p>
+            <div class="boxIzquierda">
+              UPDATE `body` SET `finished`= 1 WHERE `idBranch`= myIdBranch; <br><br>
+
+              IF ROW_COUNT() > 0 THEN RETURN true;<br>
+              &emsp;ELSE RETURN false;<br>
+              END IF;<br>
+            </div>
+          </ul>
+        </div>
+
+
+
+        <!-- <div class="myIndexTable boxLook">   
+                             <a class="myIndexCell" id=".....Visible">
+                                ...... </a> 
+                             <ul id="...." class="hiddenPart nota s2"> 
+                                  <p class="boxIzquierda"><b>&emsp;..resp....</b></p>
+                                <div  class="boxIzquierda">
+                                        *** código ***
+                                </div> 
+                                 <a href="#.....Visible"><spam class="bbddFuncion">.......</spam></a>
+                             </ul> 
+                         </div>   
+                        -->
+      </div>
+    </section>
+    <section id="seccion5" class="mainWrapper center" data-scroll-spy>
+      <h2>Procedures</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetBodyVisible">
+            GetBody</a>
+          <div id="GetBody" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Su misión es obtener todo el contenido de la etiqueta body de una página
+            </div>
+            <img src="./img/procedure/procedure_getBody.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetBodyTempVisible">
+            GetBodyTemp</a>
+          <div id="GetBodyTemp" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Su misión es obtener todo el contenido de la etiqueta body de una página.
+              No importa que una rama tenga hojas y ramas.
+            </div>
+            <img src="./img/procedure/procedure_GetBodyLuciano01.png" alt="">
+            <img src="./img/procedure/procedure_GetBodyLuciano02.png" alt="">
+            <img src="./img/procedure/procedure_GetBodyLuciano03.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetBranchsVisible">
+            GetBranchs</a>
+          <div id="GetBranchs" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Su misión es obtener todas las ramas de una página
+            </div>
+            <img src="./img/procedure/procedure_GetBranchs01.png" alt="">
+            <img src="./img/procedure/procedure_GetBranchs02.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetFileCssPathVisible">
+            GetFileCssPath</a>
+          <div id="GetFileCssPath" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene los ficheros css que intervienen en una página
+            </div>
+            <img src="./img/procedure/procedure_getfilecsspath.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetFileCssWebVisible">
+            GetFileCssWeb</a>
+          <div id="GetFileCssWeb" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene los ficheros css de la web que intervienen en una página
+            </div>
+            <img src="./img/procedure/procedure_getfilecssweb.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetFileJsPathVisible">
+            GetFileJsPath</a>
+          <div id="GetFileJsPath" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene los ficheros js internos que intervienen en una página
+            </div>
+            <img src="./img/procedure/procedure_getjspath.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetFileJsWebVisible">
+            GetFileJsWeb</a>
+          <div id="GetFileJsWeb" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene los ficheros js de la web que intervienen en una página
+            </div>
+            <img src="./img/procedure/procedure_getjsweb.png" alt="">
+          </div>
+        </div>
+
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetHeadVisible">
+            GetHead</a>
+          <div id="GetHead" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene toda la etiqueta head de una página
+            </div>
+            <img src="./img/procedure/procedure_getHead.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetLeafsOfBranchVisible">
+            GetLeafsOfBranch</a>
+          <div id="GetLeafsOfBranch" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene todas las hojas de una rama.
+            </div>
+            <img src="./img/procedure/procedure_GetLeafsOfBranch.png" alt="">
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetLinkHrefVisible">
+            GetLinkHref</a>
+          <div id="GetLinkHref" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene las link href que no son css de una página
+            </div>
+            <img src="./img/procedure/procedure_getlinkhref.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetMetadataVisible">
+            GetMetadata </a>
+          <div id="GetMetadata" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene las metadata de una página
+            </div>
+            <img src="./img/procedure/procedure_getmetadata.png" alt="">
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetPageVisible">
+            GetPage </a>
+          <div id="GetPage" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              Obtiene todo el html de una página
+            </div>
+            <img src="./img/procedure/procedure_getpage.png" alt="">
+
+          </div>
+        </div>
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                <img src="./img/procedure/......" alt="">  
+                                 <a href="#...Visible" class="nota">........</a>                                
+                            </div>                                            
+                      </div>  -->
+      </div>
+    </section>
+    <section id="seccion6" class="mainWrapper center" data-scroll-spy>
+      <h2>Test</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetPageTestVisible">
+            GetPageTest</a>
+          <div id="GetPageTest" class="hiddenPart nota s2">
+            <div class="boxCenter">
+              A partir de un id de página debemos obtener todo el html de la página
+            </div>
+            <img src="./img/test/procedure_getpageIn.png" alt="">
+            <img src="./img/test/procedure_getpageOut.png" alt="">
+
+          </div>
+        </div>
+
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                <img src="./img/procedure/......" alt="">  
+                                 <a href="#...Visible" class="nota">........</a>                                
+                            </div>                                            
+                      </div>  -->
+      </div>
+    </section>
+
+    <!--  <div class="myIndexTable boxLook">  
+                    <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                    <div id="......" class="hiddenPart nota s2">                        
+                        <p class="boxIzquierda"><b>&emsp;............. </b></p>  
+                        <div  class="boxIzquierda">
+                            <a href="#.....Visible"><spam class="bbddFuncion">......</spam></a> <b>.......</b>
+                        </div> 
+                    </div>                                            
+                </div>
+        <iframe src='./document/CarritoDespachar.html' width='100%' height='565px' frameborder='0'> </iframe>  -->
+
+
+  </main>
+  <button class="scroll-top-btn hidden">
+    &#11014;
+  </button>
+  <buttom class="dark-theme-btn">🌙</buttom>
+
+  <script src="js/index.js" type="module"></script>
+  <script src="js/jHarnina20v5.js"></script>
+
+
+</body>
+
+</html>

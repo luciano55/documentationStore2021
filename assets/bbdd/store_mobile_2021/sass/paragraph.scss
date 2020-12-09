@@ -1,0 +1,100 @@
+
+.paragraph01{
+     display: flex;
+     flex-direction: column;    
+     align-items: center;
+     padding: 2rem;
+     background-color: rgb(235, 227, 174);
+     font-family: 'Comfortaa', cursive;
+     color: #ffffff;
+     font-size : 1em;  
+     box-sizing: border-box; 
+    
+    
+}
+.paragraph02{  
+  background: #394960;
+  color: #eff2fa;
+  height: 100vh;
+  font-family: "Open Sans";
+  font-size : 1.3em;  
+  margin: 0.2em auto;
+  padding-top: 15px;
+  //columns: 1 200px;
+  //column-gap: 10em;
+  column-rule: 1px solid #eff2fa;
+}
+
+.paragraph02:first-letter { 
+  color: #e35b5a;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding: 0 8px;
+}
+
+.paragraph03 {
+    line-height: 1.5em;
+	margin: 0.3em;
+	font-family: sans-serif;
+}
+
+.paragraph03 >  p { margin: 1.5rem 0; }
+
+// this is where the magic happens
+.paragraph03 >  p:first-of-type {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-indent: 0em;
+    
+	&:first-letter {
+		float: left;
+		color: #d00;
+		text-shadow: 2px 2px 0px #FFF, 6px 5px 0px #DCDCDC;
+		// font-size works best as a multiple of 2 of the parent <p> font-size
+		// because each multiple of 2 is equal to a line
+		// BUT your font may vary
+		font-size: 5.5rem;
+		font-weight: bold;
+		line-height: 1;
+		padding: 0 1rem 0.5rem 0;
+		// if you add bottom padding subtract amount from font-size above
+		// again, font may vary
+	}
+}
+.paragraph04{
+    
+font-family: "trebuchet MS";
+color: #222222; 
+font-size: 12pt;
+text-align: justify;  
+line-height: 28px;  
+padding: 10px;
+margin-top: 10px;
+
+}
+.paragraph05{ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background: $lightgrey;
+  color: #eff2fa;
+  font-family: "Open Sans";
+  font-size : 1.3em;  
+  margin: 0 auto;
+  padding: 0.8em;  
+  text-align: left;
+ 
+    
+}
+.probar {
+    color: greenyellow;
+    font-size : 1.2em;    
+}
+.probar:hover{
+    font-size : 2em;
+}
+
+.litle{
+  font-size : 0.8em;  
+}

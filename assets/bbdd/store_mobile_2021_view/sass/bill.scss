@@ -1,0 +1,39 @@
+.bill{
+    display: table;
+    margin: 0.3em;
+}
+.billFila{
+    display: table-row; 
+    text-align: center;
+   
+}
+.billCol{
+  display: table-cell;
+  padding: 0.3em;
+  background: #ddd;
+}
+.billTitle {
+  display: table-caption;
+  color: gray;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0.2em;
+  padding: 0.2em;
+  font-family: Arial;
+}
+
+.billSubTitle {
+  color: white;
+  font-size: 0.8em;
+  margin: 0.1em;
+  padding: 0.1em;
+  font-family: Arial;
+}
+
+.billValue {
+    background-color: #e7e7e7; color: gray;
+    margin: 0.3em;
+    padding: 0.3em;
+   } 
+
+

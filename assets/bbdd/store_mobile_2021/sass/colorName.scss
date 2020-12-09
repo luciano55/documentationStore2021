@@ -1,0 +1,396 @@
+.s1 {
+	@include ColorPrincipal;
+}
+.s2 {
+	@include ColorPrincipalTransparente;
+}
+
+.s3 {
+	@include ColorPrincipalClaro;
+}
+.s4 {
+	@include ColorPrincipalClaroTransparente;
+}
+.s5 {
+	@include ColorPrincipalOscuro;
+}
+.s6 {
+	@include ColorPrincipalOscuroTransparente;
+}
+.s7 {
+	@include ColorSecundario;
+}
+.s8 {
+	@include ColorSecundarioTransparente;
+}
+.s9 {
+	@include ColorSecundarioClaro;
+}
+.s10 {
+	@include ColorSecundarioClaroTransparente;
+}
+.s11 {
+	@include ColorSecundarioOscuro;
+}
+.s12 {
+	@include ColorSecundarioOscuroTransparente;
+}
+
+.s13 {
+	@include ColorTerciario;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+.s14 {
+	@include ColorTerciarioTransparente;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+.s15 {
+	@include ColorTerciarioClaro;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+.s16 {
+	@include ColorTerciarioClaroTransparente;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+.s17 {
+	@include ColorTerciarioOscuro;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+.s18 {
+	@include ColorTerciarioOscuroTransparente;
+	color:rgb(97, 103, 112);
+	text-shadow: 0.1px 0.1px 0.1px blue;
+}
+
+// COLORES
+
+// colores base
+
+.basecolor {
+    background: $basecolor;
+}
+
+.baselight {
+    background: $baselight;
+}
+
+.secondary {
+    background: $secondary;
+}
+
+.compcolor {
+    background: $compcolor;
+}
+
+.bordercolor {
+    background: $bordercolor;
+}
+
+.white {
+    background: $white;
+}
+
+.black {
+    background: $black;
+    color: white;
+}
+
+// grises
+
+.superdark {
+    background: $superdark;
+    color: $white;
+}
+
+.darkergrey {
+    background: $darkergrey;
+}
+
+.darkgrey {
+    background: $darkgrey;
+}
+
+.grey  {
+    background: $grey ;
+}
+
+.lightgrey {
+    background: $lightgrey;
+}
+
+.lightergrey {
+    background: $lightergrey;
+}
+
+// rojos
+
+.superdarkred {
+    background: $superdarkred;
+}
+
+.darkerred {
+    background: $darkerred;
+}
+
+.darkred {
+    background: $darkred;
+}
+
+.normalred {
+    background: $normalred;
+}
+
+.lightred {
+    background: $lightred;
+}
+
+.lighterred {
+    background: $lighterred;
+}
+
+// verdes
+
+.superdarkgreen {
+    background: $superdarkgreen;
+}
+
+.darkergreen {
+    background: $darkergreen;
+}
+
+.darkgreen {
+    background: $darkgreen;
+}
+
+.normalgreen {
+    background: $normalgreen;
+}
+
+.lightgreen {
+    background: $lightgreen;
+}
+
+.lightergreen {
+    background: $lightergreen;
+}
+
+// azules
+
+.superdarkblue {
+    background: $superdarkblue;
+    color: white;
+}
+
+.darkerblue {
+    background: $darkerblue;
+}
+
+.darkblue {
+    background: $darkblue;
+}
+
+.normalblue {
+    background: $normalblue;
+}
+
+.lightblue {
+    background: $lightblue;
+}
+
+.lighterblue {
+    background: $lighterblue;
+}
+
+// enlaces
+
+.enlaceFondo {
+    background: $enlace_fondo;
+    color: white;
+}
+
+.enlaceTexto {
+    background: $enlace_texto;
+}
+
+// Alertas y PopUs
+
+.alertColor {
+    background: $alertcolor;
+}
+
+.errorColor {
+    background: $errorcolor;
+}
+
+.infoColor {
+    background: $infocolor;
+}
+
+.inversColor {
+    background: $inverscolor;
+}
+
+.successColor {
+    background: $successcolor;
+}
+
+.warningColor {
+    background: $warningcolor;
+}
+
+// Alertas y PopUs
+
+.alertColor {
+    background: $alertcolor;
+}
+
+.errorColor {
+    background: $errorcolor;
+    color: white;
+}
+
+.infoColor {
+    background: $infocolor;
+}
+
+.inversColor {
+    background: $inverscolor;
+    color: white;
+}
+
+.successColor {
+    background: $successcolor;
+}
+
+.warningColor {
+    background: $warningcolor;
+}
+
+// Social
+
+.facebook {
+    background: $facebook;
+    color: white;
+}
+
+.twitter {
+    background: $twitter;
+    color: white;
+}
+
+.googlePlus {
+    background: $googleplus;
+    color: white;
+}
+
+.pinterest {
+    background: $pinterest;
+    color: white;
+}
+
+.skype {
+    background: $skype;
+    color: white;
+}
+
+.spotify {
+    background: $spotify;
+    color: white;
+}
+
+/*
+
+.d1 > div {
+	@include ColorPrincipal;
+  	box-shadow: $sombraDado;
+}
+
+.d2 > div {
+	@include ColorPrincipalTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d3 > div {
+	@include ColorPrincipalClaro;
+  	box-shadow: $sombraDado;
+}
+
+.d4 > div {
+    @include ColorPrincipalClaroTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d5 > div {
+	@include ColorPrincipalOscuro;
+  	box-shadow: $sombraDado;
+}
+
+.d6 > div {
+    @include ColorPrincipalOscuroTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d7 > div {
+	@include ColorSecundario;
+  	box-shadow: $sombraDado;
+}
+
+.d8 > div {
+    @include ColorSecundarioTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d9 > div {
+	@include ColorSecundarioClaro;
+  	box-shadow: $sombraDado;
+}
+
+.d10 > div {
+    @include ColorSecundarioClaroTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d11 > div {
+	@include ColorSecundarioOscuro;
+  	box-shadow: $sombraDado;
+}
+
+.d12 > div {
+    @include ColorSecundarioOscuroTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d13 > div {
+	@include ColorTerciario;
+  	box-shadow: $sombraDado;
+}
+
+.d14 > div {
+    @include ColorTerciarioTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d15 > div {
+	@include ColorTerciarioClaro;
+  	box-shadow: $sombraDado;
+}
+
+.d16 > div {
+    @include ColorTerciarioClaroTransparente;
+  	box-shadow: $sombraDado;
+}
+
+.d17 > div {
+	@include ColorTerciarioOscuro;
+  	box-shadow: $sombraDado;
+}
+
+.d18 > div {
+	@include ColorTerciarioOscuroTransparente;
+  	box-shadow: $sombraDado;
+}*/

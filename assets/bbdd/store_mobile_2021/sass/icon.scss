@@ -1,0 +1,70 @@
+.iconTomato{
+    font-size: 3em; color: Tomato;
+}
+.iconBlue{
+    font-size: 2em; color: Dodgerblue;
+}
+.iconGray{
+    font-size: 1em; color: gray;
+}
+.iconWhite{
+    font-size: 0.7em; color: whitesmoke;
+}
+.glyph {
+        display: inline-block;
+        width: 2em;
+        margin: 0.1em;
+        text-align: center;
+        vertical-align: top;
+        //background: #FFF;
+    }
+.glyph .glyph-icon1 {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 0.5;//64px;
+        line-height: 1;
+    }
+.glyph .glyph-icon1:before {
+        font-size: 0.5em;
+        color: #222;
+        margin-left: 0;
+    }
+.glyph .glyph-icon2 {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 1em;//64px;
+        line-height: 1;
+    }
+.glyph .glyph-icon2:before {
+        font-size: 1em;
+        color: #222;
+        margin-left: 0;
+    }
+
+.glyph .glyph-icon3 {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 1em;//64px;
+        line-height: 1;
+    }
+.glyph .glyph-icon3:before {
+        font-size: 1.5em;
+        color: #222;
+        margin-left: 0;
+    }
+
+.glyph .glyph-icon4 {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 2em;//64px;
+        line-height: 1;
+    }
+.glyph .glyph-icon4:before {
+        font-size: 2em;
+        color: #222;
+        margin-left: 0;
+    }

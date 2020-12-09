@@ -1,0 +1,227 @@
+// Main Container
+.mainWrapper {
+    font-size: 1em;
+  width: 90%;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+}
+
+.mainWrapperMovil {
+    width: 90%;
+  margin: 0.3em auto;
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;    
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+}
+.footerWrapperMovil {
+ 
+  text-align: center;
+  flex-wrap: wrap;
+  background-image: url(../img/texture02.png);
+  background-repeat: repeat;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:2em;
+   width:100%;
+   font-size: 1em;
+  // background:#999;
+}
+
+// Ruptura y orientación
+.inWrap{
+    flex-wrap: wrap;
+}
+.inNotWrap{
+    flex-wrap: nowrap;
+}
+
+.inColumn{ 
+    flex-direction: column;    
+}
+.inRow{ 
+    flex-direction: row;    
+}
+// alineación justify-content: alinear sobre al eje horizontal
+.center{
+    display:inline-block;
+    text-align:center;
+}
+.jcCenter{
+    display: flex; 
+    justify-content: center;
+}
+.jcFlex_end{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.jcSpace_around{
+    display: flex; 
+    justify-content: space-around;
+}
+.jcSpace-between{
+    display: flex; 
+    justify-content: space-between;
+}
+
+// align-item alinear sobre al eje vertical
+.aiFlex_start{
+    display: flex; 
+   align-items: flex-start; 
+}
+.aiCenter{
+    display: flex; 
+    align-items: center;
+}
+
+  // ----------------M E D I D A S------
+
+.block{
+    display:block;
+}
+.inline{
+    display:inline;
+}
+.inlineBlock{
+    display:inline-block;
+}
+
+// -------------------  Ancho contenedor en %
+.width10{
+   width: 10%; 
+}
+.width20{
+   width: 20%; 
+}
+.width25{
+   width: 25%; 
+}
+.width30{
+   width: 30%; 
+}
+.width33{
+   width: 33.333%; 
+}
+.width40{
+   width: 40%; 
+}
+.width50{
+   width: 50%; 
+}
+.width80{
+   width: 80%; 
+}
+//-------------------- size image
+
+.sizeLogo8_9{
+    width: 8em;
+    height: 9em;    
+}
+
+
+//------------------ Titulos principales y descripciones,observaciones, notas
+.mainTitle {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width: 90%;     
+	background-color: $grey;
+}
+
+.subtitle {
+	width: 90%;
+	background-color: $darkgrey;
+	color: $enlace_texto;
+	font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.title {
+	font-size: 2em;
+	width: 90%;
+	background-color: $lightgrey;	
+	color: $baselight;
+	font-family: 'Roboto', sans-serif;	
+	text-decoration: none;
+}
+
+.footerTitle{
+    text-align: center;
+     width: 50%;     
+	background-color: $grey;
+}
+
+//------------------ container colores.html
+.wrapperColor {
+  width: 70%;
+  margin: 50px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+  border: 2px solid $lightergrey;
+}
+
+//  ------- box -------
+.boxIzquierda {
+  width: 10 em; //150px;
+  margin: 10px;
+text-align: left;
+justify-content: center;}
+
+.boxDerecha {
+  width: 10 em; //150px;
+  margin: 10px;
+text-align: right;
+justify-content: center;}
+
+.boxCenter {
+  width: 10 em; //150px;
+  margin: 10px;
+text-align: center;
+justify-content: center;}
+
+.titleBox p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: $darkgrey; }
+
+
+.titleBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $lightergrey }
+
+.titleBoxIzquierda {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  background: $lightergrey }
+
+.titleBoxDerecha {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $lightergrey }
+
+

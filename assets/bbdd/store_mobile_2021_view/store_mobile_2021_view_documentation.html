@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Fundamentos 2020</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+</head>
+
+<body data-dark>
+  <header class="header">
+    <h1>BBDD STORE ** DAM 20-21 VIEW</h1>
+  </header>
+  <button class="panel-btn  hamburger--vortex " type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1" data-scroll-spy>Introduction</a>
+      <a href="#seccion2" data-scroll-spy>Procedures</a>
+
+
+
+    </nav>
+  </aside>
+  <main>
+    <section id="seccion1" class="mainWrapper center" data-scroll-spy>
+      <h2>Introduction</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell menuLook" id="introduccionVisible"> Introduction</a>
+
+          <ul id="introduccion" class="hiddenPart nota s2">
+            <li>
+              <h2>mobile_store_2021_view</h2><br>
+            </li>
+            <li>Esta BBDD será la que utilizaremos en la aplicación.</li>
+            <li>Estará protegida su acceso.</li>
+            <li>Los únicos permisos serán los que vayamos concediendo</li>
+
+            <br>
+
+
+          </ul>
+        </div>
+      </div>
+      </h2>
+    </section>
+
+    <section id="seccion2" class="mainWrapper center" data-scroll-spy>
+      <h2>Procedures</h2>
+      <div class="myIndex">
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="AddVisitVisible">
+            AddVisit</a>
+          <div id="AddVisit" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              <h3>Su misión es registrar cada una de las visitas a la página</h3><br>
+              DELIMITER $$<br>
+              CREATE DEFINER=`root`@`localhost` PROCEDURE `AddVisit`(IN `myPage` VARCHAR(30), OUT `message`
+              VARCHAR(100))
+              NO SQL<br>
+              BEGIN<br><br>
+
+              INSERT INTO mobile_store_2021_page.`visit`(`idPage`) VALUES ((SELECT idPage FROM
+              mobile_store_2021_page.`page` WHERE
+              pageName = myPage));<br><br>
+              IF ROW_COUNT() > 0 THEN SET message = "OK: Visita Registrada";<br>
+              &emsp;ELSE SET message = "Error: Visita NO Registrada";<br>
+              END IF;<br><br>
+              END$$<br>
+              DELIMITER ;
+            </div>
+
+
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetCountVisitVisible">
+            GetCountVisit</a>
+          <div id="GetCountVisit" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              <h3>Su misión es obtener el total de visitas de una página</h3><br>
+              DELIMITER $$<br>
+              CREATE DEFINER=`root`@`localhost` PROCEDURE `GetPage`(IN `myPage` VARCHAR(100), OUT `htmlTxt`
+              VARCHAR(30000))
+              NO SQL<br>
+              BEGIN<br><br>
+
+              CALL mobile_store_2021_page.GetPage((SELECT `idPage` FROM mobile_store_2021_page.page WHERE `pageName` =
+              myPage),
+              htmlTxt);<br><br>
+
+              END$$<br>
+              DELIMITER ;
+            </div>
+          </div>
+        </div>
+        <div class="myIndexTable boxLook">
+          <a class="myIndexCell" id="GetPageVisible">
+            GetPage</a>
+          <div id="GetPage" class="hiddenPart nota s2">
+            <div class="boxIzquierda">
+              <h3>Su misión es obtener de la BBDD el esqueleto de la página</h3><br>
+              DELIMITER $$<br>
+              CREATE DEFINER=`root`@`localhost` PROCEDURE `GetPage`(IN `myPage` VARCHAR(100), OUT `htmlTxt`
+              VARCHAR(30000))
+              NO SQL<br>
+              BEGIN<br><br>
+
+              CALL mobile_store_2021_page.GetPage((SELECT `idPage` FROM mobile_store_2021_page.page WHERE `pageName` =
+              myPage),
+              htmlTxt);<br>
+
+              END$$<br>
+              DELIMITER ;
+            </div>
+          </div>
+        </div>
+        <!--  <div class="myIndexTable boxLook">  
+                            <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                            <div id="......" class="hiddenPart nota s2">                        
+                                <img src="./img/procedure/......" alt="">  
+                                 <a href="#...Visible" class="nota">........</a>                                
+                            </div>                                            
+                      </div>  -->
+      </div>
+    </section>
+
+
+    <!--  <div class="myIndexTable boxLook">  
+                    <a class="myIndexCell" id="......Visible">
+                               ......... </a> 
+                    <div id="......" class="hiddenPart nota s2">                        
+                        <p class="boxIzquierda"><b>&emsp;............. </b></p>  
+                        <div  class="boxIzquierda">
+                            <a href="#.....Visible"><spam class="bbddFuncion">......</spam></a> <b>.......</b>
+                        </div> 
+                    </div>                                            
+                </div>
+        <iframe src='./document/CarritoDespachar.html' width='100%' height='565px' frameborder='0'> </iframe>  -->
+
+
+  </main>
+  <button class="scroll-top-btn hidden">
+    &#11014;
+  </button>
+  <buttom class="dark-theme-btn">🌙</buttom>
+
+  <script src="js/index.js" type="module"></script>
+  <script src="js/jHarnina20v5.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@media (min-width: 900px){
+    
+    .mainWrapperMovil{  
+        font-size: 1.1em;
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+    .mainWrapper{  
+        font-size: 1.1rem;
+        width: 95%;
+        
+       
+    }
+    .myIndexCell {
+         width: 30%;
+    }
+    .footerWrapperMovil{
+        position: relative;
+        font-size: 2em;
+        height: 1em;
+        margin-top: 4em;
+        bottom: 0.2em;
+    }
+    .paragraph01{
+         font-size: 1.8em;
+        width: 70%;
+        text-align: center;
+        
+    }
+    body{
+        display: flex;
+        flex-direction: column; 
+        
+        align-items: center;
+    }
+}

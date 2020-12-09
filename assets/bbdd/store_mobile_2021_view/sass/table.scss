@@ -1,0 +1,40 @@
+.myIndex {
+  flex: 1;
+}
+
+.myIndexTable {
+  width: 80%;
+  font-size: 1em;
+  margin: 50px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+  border: 2px solid $lightergrey;
+}
+
+.myIndexCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  width: 80%;
+  height: 4em;
+  padding: 5px;  
+  font-family: sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  flex-grow: 1;
+}
+pre {
+  border:1px solid #A2A2A2;
+  background-color:#F1F1F1;
+  padding:8px;
+  margin:5px;
+  color:#0150c7;
+  overflow:auto
+}
